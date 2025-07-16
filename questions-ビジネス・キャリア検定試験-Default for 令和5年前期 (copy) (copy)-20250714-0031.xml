@@ -1,0 +1,2201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$module$/top/Default for 令和５年前期 (copy) (copy)</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text>The default category for questions shared in context '令和５年前期 (copy) (copy)'.</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 21007  -->
+  <question type="multichoice">
+    <name>
+      <text>問題1　生産管理に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>1　<ruby>生産<rt>せいさん</rt></ruby><ruby>管理<rt>かんり</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>管理<rt>かんり</rt></ruby>とは、<ruby>経営<rt>けいえい</rt></ruby><ruby>目的<rt>もくてき</rt></ruby>に<ruby>沿<rt>そ</rt></ruby>って、<ruby>種々<rt>しゅじゅ</rt></ruby>の<ruby>資源<rt>しげん</rt></ruby>を<ruby>適切<rt>てきせつ</rt></ruby>に<ruby>計画<rt>けいかく</rt></ruby>し、<ruby>運用<rt>うんよう</rt></ruby>し、<ruby>統制<rt>とうせい</rt></ruby>する<ruby>手続<rt>てつづ</rt></ruby>きや<ruby>活動<rt>かつどう</rt></ruby>である。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>生産<rt>せいさん</rt></ruby><ruby>管理<rt>かんり</rt></ruby>の<ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>活動<rt>かつどう</rt></ruby>として、QCDに<ruby>関<rt>かん</rt></ruby>する<ruby>管理<rt>かんり</rt></ruby>がある</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>ウ．PDCAサイクルのPを<ruby>単純化<rt>たんじゅんか</rt></ruby>（Simplify）のSに<ruby>置<rt>お</rt></ruby>き<ruby>換<rt>か</rt></ruby>え、SDCAさいくるということもある。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<ruby>廃棄物<rt>はいきぶつ</rt></ruby>の<ruby>発生<rt>はっせい</rt></ruby>を<ruby>抑制<rt>よくせい</rt></ruby>し、<ruby>資源<rt>しげん</rt></ruby>の<ruby>循環的<rt>じゅんかんてき</rt></ruby><ruby>利用<rt>りよう</rt></ruby>や<ruby>適正<rt>てきせい</rt></ruby>な<ruby>処分<rt>しょぶん</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>管理<rt>かんり</rt></ruby>も<ruby>生産<rt>せいさん</rt></ruby><ruby>管理<rt>かんり</rt></ruby>の<ruby>一部<rt>いちぶ</rt></ruby>となる。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21022  -->
+  <question type="multichoice">
+    <name>
+      <text>問題10　多種少量生産に関する記述として最も適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>10　<ruby>多種<rt>たしゅ</rt></ruby><ruby>少量<rt>しょうりょう</rt></ruby><ruby>生産<rt>せいさん</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>適切<rt>てきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．ライン<ruby>生産<rt>せいさん</rt></ruby>に<ruby>適<rt>てき</rt></ruby>しており、<ruby>高<rt>たか</rt></ruby>い<ruby>生産性<rt>せいさんせい</rt></ruby>で<ruby>低<rt>てい</rt></ruby>こすとの<ruby>製品<rt>せいひん</rt></ruby>の<ruby>生産<rt>せいさん</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>している。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>個々<rt>ここ</rt></ruby>の<ruby>注文<rt>ちゅうもん</rt></ruby>の<ruby>都度<rt>つど</rt></ruby>、1<ruby>回<rt>かい</rt></ruby><ruby>限<rt>かぎ</rt></ruby>りの<ruby>生産<rt>せいさん</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う<ruby>形態<rt>けいたい</rt></ruby>である。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>適切<rt>てきせつ</rt></ruby>なマーケティング<ruby>活動<rt>かつどう</rt></ruby>を<ruby>支<rt>ささ</rt></ruby>え<ruby>取<rt>と</rt></ruby>り、たいみんぐの<ruby>良<rt>よ</rt></ruby>い<ruby>新<rt>しん</rt></ruby><ruby>製品<rt>せいひん</rt></ruby>の<ruby>開発<rt>かいはつ</rt></ruby>・<ruby>生産<rt>せいさん</rt></ruby>・<ruby>販売<rt>はんばい</rt></ruby>が<ruby>経営<rt>けいえい</rt></ruby>を<ruby>左右<rt>さゆう</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>エ．<ruby>材料<rt>ざいりょう</rt></ruby>や<ruby>部品<rt>ぶひん</rt></ruby>から<ruby>製品<rt>せいひん</rt></ruby>を<ruby>生産<rt>せいさん</rt></ruby>する<ruby>手順<rt>てじゅん</rt></ruby>が<ruby>多様<rt>たよう</rt></ruby>であるため、<ruby>生産<rt>せいさん</rt></ruby><ruby>工程<rt>こうてい</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れがそれぞれ<ruby>製品<rt>せいひん</rt></ruby>について<ruby>異<rt>こと</rt></ruby>なり、<ruby>工程<rt>こうてい</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れも<ruby>交錯<rt>こうさく</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21497  -->
+  <question type="multichoice">
+    <name>
+      <text>問題11　日程計画における各種の手法に関する記述として最も適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>11　<ruby>日程<rt>にってい</rt></ruby><ruby>計画<rt>けいかく</rt></ruby>における<ruby>各種<rt>かくしゅ</rt></ruby>の<ruby>手法<rt>しゅほう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>適切<rt>てきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>ア．<ruby>手配<rt>てはい</rt></ruby><ruby>番数<rt>ばんすう</rt></ruby>は、<ruby>基準<rt>きじゅん</rt></ruby><ruby>日程<rt>にってい</rt></ruby>を<ruby>数値化<rt>すうちか</rt></ruby>したものであり、<ruby>関係<rt>かんけい</rt></ruby>する<ruby>工程<rt>こうてい</rt></ruby>の<ruby>着手日<rt>ちゃくしゅび</rt></ruby><ruby>又<rt>また</rt></ruby>は<ruby>完成日<rt>かんせいび</rt></ruby>が、<ruby>製品<rt>せいひん</rt></ruby>の<ruby>最終<rt>さいしゅう</rt></ruby><ruby>完了日<rt>かんりょうび</rt></ruby>の<ruby>何<rt>なん</rt></ruby><ruby>日<rt>にち</rt></ruby><ruby>前<rt>まえ</rt></ruby>になるかを<ruby>示<rt>しめ</rt></ruby>す<ruby>値<rt>ね</rt></ruby>である。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>順序<rt>じゅんじょ</rt></ruby>づけ<ruby>法<rt>ほう</rt></ruby>は、ある<ruby>作業<rt>さぎょう</rt></ruby>すてーしょんにおいて1つの<ruby>仕事<rt>しごと</rt></ruby>が<ruby>終了<rt>しゅうりょう</rt></ruby>したときに、その<ruby>時点<rt>じてん</rt></ruby>で<ruby>加工待<rt>かこうま</rt></ruby>ちにある<ruby>仕事群<rt>しごとぐん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>から1つの<ruby>仕事<rt>しごと</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んで<ruby>決定<rt>けってい</rt></ruby>していく<ruby>方法<rt>ほうほう</rt></ruby>である。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．フォワード<ruby>法<rt>ほう</rt></ruby>は、<ruby>完成<rt>かんせい</rt></ruby><ruby>予定日<rt>よていび</rt></ruby>（<ruby>納期<rt>のうき</rt></ruby>）を<ruby>基準<rt>きじゅん</rt></ruby>にしてすけじゅーるを<ruby>作成<rt>さくせい</rt></ruby>する<ruby>方法<rt>ほうほう</rt></ruby>である。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<span class="fontstyle0">ディスパッチング</span> <ruby>法<rt>ほう</rt></ruby>は、<ruby>定<rt>さだ</rt></ruby>められた<ruby>計画<rt>けいかく</rt></ruby><ruby>期間<rt>きかん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>での<ruby>工数<rt>こうすう</rt></ruby><ruby>計画<rt>けいかく</rt></ruby>により、<ruby>複数<rt>ふくすう</rt></ruby>の<ruby>仕事<rt>しごと</rt></ruby>を<ruby>処理<rt>しょり</rt></ruby>していく<ruby>場合<rt>ばあい</rt></ruby>のスケジューリング<ruby>手法<rt>しゅほう</rt></ruby>である。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21024  -->
+  <question type="multichoice">
+    <name>
+      <text>問題12　以下に示す＜差立＞に関する記述において、（　）に当てはまる[語句]の組合せとして最も適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>12　<ruby>以下<rt>いか</rt></ruby>に<ruby>示<rt>しめ</rt></ruby>す＜<ruby>差立<rt>さりつ</rt></ruby>＞に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>において、（　）に<ruby>当<rt>あ</rt></ruby>てはまる[<ruby>語句<rt>ごく</rt></ruby>]の<ruby>組合<rt>くみあわ</rt></ruby>せとして<ruby>最<rt>もっと</rt></ruby>も<ruby>適切<rt>てきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>
+<p>   ＜<ruby>差立<rt>さりつ</rt></ruby>＞ </p>
+<p>   （A）のことを<ruby>差立<rt>さりつ</rt></ruby>ということがあり、<ruby>狭義<rt>きょうぎ</rt></ruby>と<ruby>広義<rt>こうぎ</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>で<ruby>解釈<rt>かいしゃく</rt></ruby>することがある。<ruby>狭義<rt>きょうぎ</rt></ruby>の<ruby>差立<rt>さりつ</rt></ruby>では、（B）を<ruby>製造<rt>せいぞう</rt></ruby><ruby>現場<rt>げんば</rt></ruby>で<ruby>実施<rt>じっし</rt></ruby><ruby>可能<rt>かのう</rt></ruby>な（C）を<ruby>決<rt>き</rt></ruby>めることに<ruby>焦点<rt>しょうてん</rt></ruby>をあてている。<ruby>広義<rt>こうぎ</rt></ruby>の<ruby>差立<rt>さりつ</rt></ruby>とは、（A）と<ruby>同義<rt>どうぎ</rt></ruby>にとらえて、<ruby>作業<rt>さぎょう</rt></ruby><ruby>準備<rt>じゅんび</rt></ruby>、（D）、<ruby>作業<rt>さぎょう</rt></ruby><ruby>指示<rt>しじ</rt></ruby>、<ruby>作業<rt>さぎょう</rt></ruby><ruby>指導<rt>しどう</rt></ruby>の4つの<ruby>統制<rt>とうせい</rt></ruby><ruby>業務<rt>ぎょうむ</rt></ruby>をすべて<ruby>含<rt>ふく</rt></ruby>める<ruby>場合<rt>ばあい</rt></ruby>がある。     </p>
+<p>【<ruby>語句<rt>ごく</rt></ruby>】</p>
+<p style="text-align: left;">           1.<ruby>作業<rt>さぎょう</rt></ruby><ruby>分配<rt>ぶんぱい</rt></ruby>        </p>
+<p style="text-align: left;">　　　2.<ruby>製作<rt>せいさく</rt></ruby><ruby>手配<rt>てはい</rt></ruby>        </p>
+<p style="text-align: left;">　　　3.<ruby>手順<rt>てじゅん</rt></ruby><ruby>計画<rt>けいかく</rt></ruby>      </p>
+<p style="text-align: left;">　　　4.<ruby>小<rt>しょう</rt></ruby><ruby>日程<rt>にってい</rt></ruby><ruby>計画<rt>けいかく</rt></ruby>     </p>
+<p style="text-align: left;">　　　5.<ruby>作業<rt>さぎょう</rt></ruby><ruby>優先<rt>ゆうせん</rt></ruby><ruby>順序<rt>じゅんじょ</rt></ruby>      </p>
+<p style="text-align: left;">　　　6.<ruby>工程<rt>こうてい</rt></ruby><ruby>順序<rt>じゅんじょ</rt></ruby>        </p>
+<p style="text-align: left;">　　　7.<ruby>作業<rt>さぎょう</rt></ruby><ruby>順序<rt>じゅんじょ</rt></ruby>      </p>
+<p style="text-align: left;">　　　8.<ruby>作業<rt>さぎょう</rt></ruby><ruby>割当<rt>わりあて</rt></ruby></p>
+<p>             </p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．A：2　B：4　C：5　D：8</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．A：2　B：3　C：6　D：7</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>ウ．A：1　B：4　C：5　D：8</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．A：1　B：3　C：6　D：7</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21025  -->
+  <question type="multichoice">
+    <name>
+      <text>問題13　現品管理に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>13　<ruby>現品<rt>げんぴん</rt></ruby><ruby>管理<rt>かんり</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>現品<rt>げんぴん</rt></ruby>の<ruby>取扱<rt>とりあつか</rt></ruby>い<ruby>中<rt>ちゅう</rt></ruby>や<ruby>保管中<rt>ほかんちゅう</rt></ruby>は、<ruby>現品<rt>げんぴん</rt></ruby>の<ruby>損傷<rt>そんしょう</rt></ruby><ruby>防止<rt>ぼうし</rt></ruby>や<ruby>品質<rt>ひんしつ</rt></ruby><ruby>劣化<rt>れっか</rt></ruby><ruby>防止<rt>ぼうし</rt></ruby>に<ruby>努<rt>つと</rt></ruby>める。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>イ．<ruby>現品<rt>げんぴん</rt></ruby>の<ruby>数量<rt>すうりょう</rt></ruby>と<ruby>帳簿上<rt>ちょうぼじょう</rt></ruby>の<ruby>数量<rt>すうりょう</rt></ruby>の<ruby>差異<rt>さい</rt></ruby>をちぇっくするために、<ruby>進捗<rt>しんちょく</rt></ruby><ruby>管理<rt>かんり</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>現品<rt>げんぴん</rt></ruby>の<ruby>数量<rt>すうりょう</rt></ruby>ちぇっくを<ruby>容易<rt>ようい</rt></ruby>にするためには、<ruby>標準<rt>ひょうじゅん</rt></ruby><ruby>容器<rt>ようき</rt></ruby>の<ruby>使用<rt>しよう</rt></ruby>、<ruby>標準<rt>ひょうじゅん</rt></ruby><ruby>荷<rt>に</rt></ruby><ruby>姿<rt>すがた</rt></ruby>の<ruby>設定<rt>せってい</rt></ruby>、<ruby>現品<rt>げんぴん</rt></ruby>の<ruby>一時<rt>いちじ</rt></ruby><ruby>保管<rt>ほかん</rt></ruby>の<ruby>際<rt>さい</rt></ruby>の<ruby>置<rt>お</rt></ruby>き<ruby>方<rt>かた</rt></ruby>の<ruby>統一等<rt>とういつとう</rt></ruby>を<ruby>図<rt>はか</rt></ruby>るのがよい。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<ruby>資材<rt>しざい</rt></ruby>や<ruby>仕<rt>つかまつ</rt></ruby><ruby>損品<rt>そんひん</rt></ruby>についての<ruby>保管<rt>ほかん</rt></ruby><ruby>場所<rt>ばしょ</rt></ruby>や<ruby>保管<rt>ほかん</rt></ruby><ruby>方法<rt>ほうほう</rt></ruby>を、<ruby>明確<rt>めいかく</rt></ruby>に<ruby>規定<rt>きてい</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21026  -->
+  <question type="multichoice">
+    <name>
+      <text>問題14　生産性指標に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>14　<ruby>生産性<rt>せいさんせい</rt></ruby><ruby>指標<rt>しひょう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>ア．<ruby>歩留<rt>ぶど</rt></ruby>まりは、<ruby>資材<rt>しざい</rt></ruby>の<ruby>消費率<rt>しょうひりつ</rt></ruby>の<ruby>有効度<rt>ゆうこうど</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>し、<ruby>資材<rt>しざい</rt></ruby><ruby>使用量<rt>しようりょう</rt></ruby>／<ruby>製品量<rt>せいひんりょう</rt></ruby>にて<ruby>求<rt>もと</rt></ruby>められる。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>作業<rt>さぎょう</rt></ruby><ruby>能率<rt>のうりつ</rt></ruby>は、<ruby>計画<rt>けいかく</rt></ruby><ruby>工数<rt>こうすう</rt></ruby>／<ruby>正味<rt>しょうみ</rt></ruby><ruby>実績<rt>じっせき</rt></ruby><ruby>工数<rt>こうすう</rt></ruby>にて<ruby>求<rt>もと</rt></ruby>められる。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>原材料<rt>げんざいりょう</rt></ruby>の<ruby>生産性<rt>せいさんせい</rt></ruby>は、<ruby>生産<rt>せいさん</rt></ruby><ruby>活動<rt>かつどう</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>として<ruby>得<rt>え</rt></ruby>られた<ruby>生産量<rt>せいさんりょう</rt></ruby>と、それをつくるために<ruby>要<rt>よう</rt></ruby>した<ruby>資材<rt>しざい</rt></ruby><ruby>使用量<rt>しようりょう</rt></ruby>との<ruby>比率<rt>ひりつ</rt></ruby>で<ruby>表<rt>あらわ</rt></ruby>す。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<ruby>適合品率<rt>てきごうひんりつ</rt></ruby>とは、<ruby>完成<rt>かんせい</rt></ruby>した<ruby>製品<rt>せいひん</rt></ruby>を<ruby>検査<rt>けんさ</rt></ruby>したもののうち、<ruby>適合品<rt>てきごうひん</rt></ruby>として<ruby>判定<rt>はんてい</rt></ruby>された<ruby>製品<rt>せいひん</rt></ruby>の<ruby>割合<rt>わりあい</rt></ruby>のことである。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21027  -->
+  <question type="multichoice">
+    <name>
+      <text>問題15　設備保全の目的に関する記述として最も関連性が低いものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>15　<ruby>設備<rt>せつび</rt></ruby><ruby>保全<rt>ほぜん</rt></ruby>の<ruby>目的<rt>もくてき</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>関連性<rt>かんれんせい</rt></ruby>が<ruby>低<rt>ひく</rt></ruby>いものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>作業者<rt>さぎょうしゃ</rt></ruby>の<ruby>安全<rt>あんぜん</rt></ruby>を<ruby>確保<rt>かくほ</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>イ．<ruby>製品<rt>せいひん</rt></ruby>の<ruby>開発<rt>かいはつ</rt></ruby>を<ruby>容易<rt>ようい</rt></ruby>にする。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>生産物<rt>せいさんぶつ</rt></ruby>の<ruby>品質<rt>ひんしつ</rt></ruby>を<ruby>維持<rt>いじ</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<ruby>長期間<rt>ちょうきかん</rt></ruby>、<ruby>設備<rt>せつび</rt></ruby>を<ruby>利用<rt>りよう</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21028  -->
+  <question type="multichoice">
+    <name>
+      <text>問題16　日常保全に関する記述として最も不適切なのは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>16　<ruby>日常<rt>にちじょう</rt></ruby><ruby>保全<rt>ほぜん</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なのは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>設備<rt>せつび</rt></ruby><ruby>異常<rt>いじょう</rt></ruby>の<ruby>兆候<rt>ちょうこう</rt></ruby>が<ruby>現<rt>あらわ</rt></ruby>れたら、<ruby>作業<rt>さぎょう</rt></ruby><ruby>標準<rt>ひょうじゅん</rt></ruby><ruby>規程等<rt>きていとう</rt></ruby>に<ruby>基<rt>もと</rt></ruby>づき<ruby>保全<rt>ほぜん</rt></ruby><ruby>部門<rt>ぶもん</rt></ruby>へ<ruby>通報<rt>つうほう</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>イ．<ruby>設備<rt>せつび</rt></ruby>の<ruby>精密<rt>せいみつ</rt></ruby><ruby>診断<rt>しんだん</rt></ruby>や<ruby>修理<rt>しゅうり</rt></ruby>は、その<ruby>設備<rt>せつび</rt></ruby>の<ruby>運転<rt>うんてん</rt></ruby><ruby>担当者<rt>たんとうしゃ</rt></ruby>が<ruby>担当<rt>たんとう</rt></ruby>するのが<ruby>原則<rt>げんそく</rt></ruby>である。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>部品<rt>ぶひん</rt></ruby>の<ruby>取<rt>と</rt></ruby><ruby>替<rt>かわ</rt></ruby><ruby>作業<rt>さぎょう</rt></ruby>を<ruby>段<rt>だん</rt></ruby><ruby>取<rt>と</rt></ruby><ruby>替<rt>かわ</rt></ruby><ruby>時<rt>とき</rt></ruby>や<ruby>磨耗<rt>まもう</rt></ruby><ruby>進行時等<rt>しんこうじとう</rt></ruby>、<ruby>必要時<rt>ひつようじ</rt></ruby>に<ruby>行<rt>おこな</rt></ruby>う。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<ruby>点検<rt>てんけん</rt></ruby>はんまー<ruby>等<rt>とう</rt></ruby>を<ruby>用<rt>もち</rt></ruby>いて<ruby>異<rt>い</rt></ruby><ruby>音<rt>おと</rt></ruby>がしないかどうか<ruby>点検<rt>てんけん</rt></ruby>するのは、<ruby>日常<rt>にちじょう</rt></ruby><ruby>点検<rt>てんけん</rt></ruby>の１つである。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21029  -->
+  <question type="multichoice">
+    <name>
+      <text>問題17　生産設備の効率を評価する方法の1つである性能稼働率を表す式として適切なのは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>17　<ruby>生産<rt>せいさん</rt></ruby><ruby>設備<rt>せつび</rt></ruby>の<ruby>効率<rt>こうりつ</rt></ruby>を<ruby>評価<rt>ひょうか</rt></ruby>する<ruby>方法<rt>ほうほう</rt></ruby>の1つである<ruby>性能<rt>せいのう</rt></ruby><ruby>稼働率<rt>かどうりつ</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>式<rt>しき</rt></ruby>として<ruby>適切<rt>てきせつ</rt></ruby>なのは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>ア．<img style="width: 100%; max-width: 375px; height: auto;" src="@@PLUGINFILE@@/image.png"></p>]]></text>
+<file name="image.png" path="/" encoding="base64">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</file>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<img style="width: 100%; max-width: 375px; height: auto;" src="@@PLUGINFILE@@/image.png"></p>]]></text>
+<file name="image.png" path="/" encoding="base64">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</file>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<img style="width: 100%; max-width: 375px; height: auto;" src="@@PLUGINFILE@@/image.png"></p>]]></text>
+<file name="image.png" path="/" encoding="base64">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</file>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<img style="width: 100%; max-width: 300px; height: auto;" src="@@PLUGINFILE@@/image.png"></p>]]></text>
+<file name="image.png" path="/" encoding="base64">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</file>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21030  -->
+  <question type="multichoice">
+    <name>
+      <text>問題18　設備の故障率を表した寿命特性曲線に関する記述として最も不適切なのは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>18　<ruby>設備<rt>せつび</rt></ruby>の<ruby>故障率<rt>こしょうりつ</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>した<ruby>寿命<rt>じゅみょう</rt></ruby><ruby>特性<rt>とくせい</rt></ruby><ruby>曲線<rt>きょくせん</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なのは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>寿命<rt>じゅみょう</rt></ruby><ruby>特性<rt>とくせい</rt></ruby><ruby>曲線<rt>きょくせん</rt></ruby>には、<ruby>老朽化<rt>ろうきゅうか</rt></ruby>した<ruby>状態<rt>じょうたい</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>期間<rt>きかん</rt></ruby>が<ruby>存在<rt>そんざい</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>寿命<rt>じゅみょう</rt></ruby><ruby>特性<rt>とくせい</rt></ruby><ruby>曲線<rt>きょくせん</rt></ruby>には、<ruby>頻繁<rt>ひんぱん</rt></ruby>に<ruby>故障<rt>こしょう</rt></ruby>するが、<ruby>徐々<rt>じょじょ</rt></ruby>に<ruby>故障<rt>こしょう</rt></ruby>が<ruby>少<rt>すく</rt></ruby>なくなる<ruby>期間<rt>きかん</rt></ruby>が<ruby>存在<rt>そんざい</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>寿命<rt>じゅみょう</rt></ruby><ruby>特性<rt>とくせい</rt></ruby><ruby>曲線<rt>きょくせん</rt></ruby>において、<ruby>規定<rt>きてい</rt></ruby>の<ruby>故障率<rt>こしょうりつ</rt></ruby><ruby>以下<rt>いか</rt></ruby>で<ruby>安定<rt>あんてい</rt></ruby>している<ruby>期間<rt>きかん</rt></ruby>は<ruby>偶発<rt>ぐうはつ</rt></ruby><ruby>故障期<rt>こしょうき</rt></ruby>と<ruby>呼<rt>よ</rt></ruby>ばれる。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>エ．<ruby>寿命<rt>じゅみょう</rt></ruby><ruby>特性<rt>とくせい</rt></ruby><ruby>曲線<rt>きょくせん</rt></ruby>は、<ruby>時間<rt>じかん</rt></ruby>とともに<ruby>性能<rt>せいのう</rt></ruby>が<ruby>低下<rt>ていか</rt></ruby>するため<ruby>性能<rt>せいのう</rt></ruby><ruby>劣化<rt>れっか</rt></ruby><ruby>曲線<rt>きょくせん</rt></ruby>とも<ruby>言<rt>い</rt></ruby>う。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21031  -->
+  <question type="multichoice">
+    <name>
+      <text>問題19　設備保全における設備の検査・整備・修理に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>19　<ruby>設備<rt>せつび</rt></ruby><ruby>保全<rt>ほぜん</rt></ruby>における<ruby>設備<rt>せつび</rt></ruby>の<ruby>検査<rt>けんさ</rt></ruby>・<ruby>整備<rt>せいび</rt></ruby>・<ruby>修理<rt>しゅうり</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>突発<rt>とっぱつ</rt></ruby><ruby>故障<rt>こしょう</rt></ruby>は、<ruby>計画<rt>けいかく</rt></ruby>していた<ruby>保全<rt>ほぜん</rt></ruby>すけじゅーるを<ruby>変更<rt>へんこう</rt></ruby>して<ruby>対応<rt>たいおう</rt></ruby>することが<ruby>必要<rt>ひつよう</rt></ruby>となる<ruby>場合<rt>ばあい</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>整備<rt>せいび</rt></ruby><ruby>活動<rt>かつどう</rt></ruby>として、<ruby>製造<rt>せいぞう</rt></ruby><ruby>部門<rt>ぶもん</rt></ruby>では<ruby>清掃<rt>せいそう</rt></ruby>、<ruby>給油<rt>きゅうゆ</rt></ruby>など<ruby>基本的<rt>きほんてき</rt></ruby>な5Sの<ruby>範疇<rt>はんちゅう</rt></ruby>の<ruby>整備<rt>せいび</rt></ruby>がある。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>日常<rt>にちじょう</rt></ruby>の<ruby>点検<rt>てんけん</rt></ruby>・<ruby>検査<rt>けんさ</rt></ruby><ruby>活動<rt>かつどう</rt></ruby>では、まず<ruby>日程<rt>にってい</rt></ruby><ruby>計画表<rt>けいかくひょう</rt></ruby>を<ruby>作成<rt>さくせい</rt></ruby>し、それにしたがって<ruby>実施<rt>じっし</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>エ．<ruby>設備<rt>せつび</rt></ruby>に<ruby>対<rt>たい</rt></ruby>する<ruby>検査<rt>けんさ</rt></ruby>の<ruby>標準化<rt>ひょうじゅんか</rt></ruby>として、<ruby>製品<rt>せいひん</rt></ruby>の<ruby>品質<rt>ひんしつ</rt></ruby><ruby>基準<rt>きじゅん</rt></ruby>を<ruby>作成<rt>さくせい</rt></ruby>し、<ruby>品質<rt>ひんしつ</rt></ruby><ruby>基準表<rt>きじゅんひょう</rt></ruby>として<ruby>整備<rt>せいび</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21014  -->
+  <question type="multichoice">
+    <name>
+      <text>問題2　作業管理の実施内容として最も関連性の低いものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>2　<ruby>作業<rt>さぎょう</rt></ruby><ruby>管理<rt>かんり</rt></ruby>の<ruby>実施<rt>じっし</rt></ruby><ruby>内容<rt>ないよう</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>関連性<rt>かんれんせい</rt></ruby>の<ruby>低<rt>ひく</rt></ruby>いものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>最<rt>もっと</rt></ruby>も<ruby>合理的<rt>ごうりてき</rt></ruby>で、<ruby>生産性<rt>せいさんせい</rt></ruby>の<ruby>高<rt>たか</rt></ruby>い<ruby>作業<rt>さぎょう</rt></ruby><ruby>方法<rt>ほうほう</rt></ruby>の<ruby>追究<rt>ついきゅう</rt></ruby> </p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>イ．<ruby>生産<rt>せいさん</rt></ruby><ruby>計画<rt>けいかく</rt></ruby>の<ruby>策定<rt>さくてい</rt></ruby>と<ruby>生産<rt>せいさん</rt></ruby><ruby>統制<rt>とうせい</rt></ruby> </p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>作業<rt>さぎょう</rt></ruby><ruby>方法<rt>ほうほう</rt></ruby>の<ruby>標準化<rt>ひょうじゅんか</rt></ruby>と<ruby>標準<rt>ひょうじゅん</rt></ruby><ruby>時間<rt>じかん</rt></ruby>の<ruby>設定<rt>せってい</rt></ruby><strong><span lang="EN-US" style="font-family: 'MS Mincho'; mso-ascii-theme-font: minor-fareast; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-fareast;"><ruby style="ruby-align: distribute-space;"><rp>)</rp></ruby></span></strong></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<ruby>作業<rt>さぎょう</rt></ruby><ruby>指導書<rt>しどうしょ</rt></ruby>（<ruby>作業<rt>さぎょう</rt></ruby><ruby>手順書<rt>てじゅんしょ</rt></ruby>）の<ruby>作成<rt>さくせい</rt></ruby>と<ruby>作業<rt>さぎょう</rt></ruby><ruby>指導<rt>しどう</rt></ruby></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21032  -->
+  <question type="multichoice">
+    <name>
+      <text>問題20　資材管理における＜分類＞と＜対象資材＞との関連付けとして最も適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>20　<ruby>資材<rt>しざい</rt></ruby><ruby>管理<rt>かんり</rt></ruby>における＜<ruby>分類<rt>ぶんるい</rt></ruby>＞と＜<ruby>対象<rt>たいしょう</rt></ruby><ruby>資材<rt>しざい</rt></ruby>＞との<ruby>関連付<rt>かんれんづ</rt></ruby>けとして<ruby>最<rt>もっと</rt></ruby>も<ruby>適切<rt>てきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>
+<p></p>
+<p>     ＜<ruby>分類<rt>ぶんるい</rt></ruby>＞</p>
+<p>A．<ruby>管理面<rt>かんりめん</rt></ruby>による<ruby>分類<rt>ぶんるい</rt></ruby> </p>
+<p>B．<ruby>使用<rt>しよう</rt></ruby><ruby>目的<rt>もくてき</rt></ruby>による<ruby>分類<rt>ぶんるい</rt></ruby> </p>
+<p>C．<ruby>現品<rt>げんぴん</rt></ruby>の<ruby>加工度<rt>かこうど</rt></ruby>による<ruby>分類<rt>ぶんるい</rt></ruby> </p>
+<p>D．<ruby>入手法<rt>にゅうしゅほう</rt></ruby>による<ruby>分類<rt>ぶんるい</rt></ruby> </p>
+<p>　＜<ruby>対象<rt>たいしょう</rt></ruby><ruby>資材<rt>しざい</rt></ruby>＞</p>
+<p>1．<ruby>常備<rt>じょうび</rt></ruby><ruby>材料<rt>ざいりょう</rt></ruby>、<ruby>非<rt>ひ</rt></ruby><ruby>常備<rt>じょうび</rt></ruby><ruby>材料<rt>ざいりょう</rt></ruby> </p>
+<p>2．<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>材料<rt>ざいりょう</rt></ruby>、<ruby>間接<rt>かんせつ</rt></ruby><ruby>材料<rt>ざいりょう</rt></ruby> </p>
+<p>3．<ruby>支給品<rt>しきゅうひん</rt></ruby>、<ruby>購入品<rt>こうにゅうひん</rt></ruby> </p>
+<p>4．<ruby>素材<rt>そざい</rt></ruby>、<ruby>粗<rt>そ</rt></ruby><ruby>形材<rt>かたちざい</rt></ruby>、<ruby>部品<rt>ぶひん</rt></ruby>、<ruby>半<rt>はん</rt></ruby><ruby>製品</ruby></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．A：2　B：1　C：3　D：4</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>イ．A：1　B：2　C：4　D：3</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．A：4　B：3　C：2　D：1</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．A：1　B：4　C：2　D：3</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21034  -->
+  <question type="multichoice">
+    <name>
+      <text>問題21　部品在庫において、部品の購入単価が発注量の多寡や市況により変動する場合がある。このような場合の当該部品の在庫残高金額の算定方法として最も不適切な...</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>21　<ruby>部品<rt>ぶひん</rt></ruby><ruby>在庫<rt>ざいこ</rt></ruby>において、<ruby>部品<rt>ぶひん</rt></ruby>の<ruby>購入<rt>こうにゅう</rt></ruby><ruby>単価<rt>たんか</rt></ruby>が<ruby>発注量<rt>はっちゅうりょう</rt></ruby>の<ruby>多寡<rt>たか</rt></ruby>や<ruby>市況<rt>しきょう</rt></ruby>により<ruby>変動<rt>へんどう</rt></ruby>する<ruby>場合<rt>ばあい</rt></ruby>がある。このような<ruby>場合<rt>ばあい</rt></ruby>の<ruby>当該<rt>とうがい</rt></ruby><ruby>部品<rt>ぶひん</rt></ruby>の<ruby>在庫<rt>ざいこ</rt></ruby><ruby>残高<rt>ざんだか</rt></ruby><ruby>金額<rt>きんがく</rt></ruby>の<ruby>算定<rt>さんてい</rt></ruby><ruby>方法<rt>ほうほう</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>ア．<ruby>期初<rt>きしょ</rt></ruby><ruby>取得<rt>しゅとく</rt></ruby><ruby>原価法<rt>げんかほう</rt></ruby> </p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>移動<rt>いどう</rt></ruby><ruby>平均法<rt>へいきんほう</rt></ruby> </p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>総<rt>そう</rt></ruby><ruby>平均法<rt>へいきんほう</rt></ruby></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<ruby>先入先出法<rt>せんにゅうさきでほう</rt></ruby><span lang="EN-US"><span style="font-size: 10.5pt; mso-bidi-font-size: 11.0pt; font-family: 'Century',serif; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: 'MS Mincho'; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-latin;"><ruby style="ruby-align: distribute-space;"><br><rp>)</rp></ruby></span></span></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21035  -->
+  <question type="multichoice">
+    <name>
+      <text>問題22　集中購買方式と分散購買方式の利点に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>22　<ruby>集中<rt>しゅうちゅう</rt></ruby><ruby>購買<rt>こうばい</rt></ruby><ruby>方式<rt>ほうしき</rt></ruby>と<ruby>分散<rt>ぶんさん</rt></ruby><ruby>購買<rt>こうばい</rt></ruby><ruby>方式<rt>ほうしき</rt></ruby>の<ruby>利点<rt>りてん</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。 </p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>集中<rt>しゅうちゅう</rt></ruby><ruby>購買<rt>こうばい</rt></ruby>は、<ruby>購買<rt>こうばい</rt></ruby><ruby>価格<rt>かかく</rt></ruby>の<ruby>引<rt>ひ</rt></ruby>き<ruby>下<rt>さ</rt></ruby>げができる。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>集中<rt>しゅうちゅう</rt></ruby><ruby>購買<rt>こうばい</rt></ruby>は、<ruby>購買<rt>こうばい</rt></ruby><ruby>事務<rt>じむ</rt></ruby><ruby>手続<rt>てつづ</rt></ruby>きを<ruby>統一<rt>とういつ</rt></ruby>できる。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>ウ．<ruby>分散<rt>ぶんさん</rt></ruby><ruby>購買<rt>こうばい</rt></ruby>は、<ruby>資材<rt>しざい</rt></ruby>の<ruby>標準化<rt>ひょうじゅんか</rt></ruby>が<ruby>容易<rt>ようい</rt></ruby>となる。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<ruby>分散<rt>ぶんさん</rt></ruby><ruby>購買<rt>こうばい</rt></ruby>は、<ruby>工場<rt>こうじょう</rt></ruby>の<ruby>立地<rt>りっち</rt></ruby>する<ruby>地域<rt>ちいき</rt></ruby><ruby>企業<rt>きぎょう</rt></ruby>に<ruby>貢献<rt>こうけん</rt></ruby>できる。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21036  -->
+  <question type="multichoice">
+    <name>
+      <text>問題23　運搬の改善・合理化を進める場合の基本原則に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>23　<ruby>運搬<rt>うんぱん</rt></ruby>の<ruby>改善<rt>かいぜん</rt></ruby>・<ruby>合理化<rt>ごうりか</rt></ruby>を<ruby>進<rt>すす</rt></ruby>める<ruby>場合<rt>ばあい</rt></ruby>の<ruby>基本<rt>きほん</rt></ruby><ruby>原則<rt>げんそく</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>活性<rt>かっせい</rt></ruby><ruby>荷物<rt>にもつ</rt></ruby>の<ruby>原則<rt>げんそく</rt></ruby>は、<ruby>物<rt>もの</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かしやすい<ruby>状態<rt>じょうたい</rt></ruby>にして、<ruby>活性<rt>かっせい</rt></ruby>を<ruby>高<rt>たか</rt></ruby>めることである。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>配置<rt>はいち</rt></ruby>の<ruby>原則<rt>げんそく</rt></ruby>は、<ruby>物<rt>もの</rt></ruby>の<ruby>置<rt>お</rt></ruby>き<ruby>方<rt>かた</rt></ruby>、<ruby>配置<rt>はいち</rt></ruby>において、<ruby>運搬<rt>うんぱん</rt></ruby>・<ruby>積<rt>せき</rt></ruby><ruby>卸<rt>おろ</rt></ruby>しを<ruby>最小限<rt>さいしょうげん</rt></ruby>にすることである。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>ウ．ユニットロードの<ruby>原則<rt>げんそく</rt></ruby>は、<ruby>荷物<rt>にもつ</rt></ruby>を10<ruby>個<rt>こ</rt></ruby>、100<ruby>個<rt>こ</rt></ruby>といった<ruby>数量<rt>すうりょう</rt></ruby>を<ruby>数<rt>かぞ</rt></ruby>えやすい10の<ruby>倍数<rt>ばいすう</rt></ruby><ruby>単位<rt>たんい</rt></ruby>にまとめることである。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<ruby>重里化<rt>しげさとか</rt></ruby>の<ruby>原則<rt>げんそく</rt></ruby>は、ローラコンベヤ、シューター<ruby>等<rt>とう</rt></ruby>のように、<ruby>物<rt>もの</rt></ruby><ruby>自体<rt>じたい</rt></ruby>の<ruby>重量<rt>じゅうりょう</rt></ruby>を<ruby>活用<rt>かつよう</rt></ruby>して<ruby>移動<rt>いどう</rt></ruby>することである。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21037  -->
+  <question type="multichoice">
+    <name>
+      <text>問題24　運搬の合理化に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>24　<ruby>運搬<rt>うんぱん</rt></ruby>の<ruby>合理化<rt>ごうりか</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。 </p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>運搬<rt>うんぱん</rt></ruby><ruby>活性<rt>かっせい</rt></ruby>とは、ものの<ruby>運<rt>はこ</rt></ruby>び<ruby>出<rt>だ</rt></ruby>しやすさや<ruby>動<rt>うご</rt></ruby>かしやすさのことをいう。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>運搬<rt>うんぱん</rt></ruby><ruby>活性<rt>かっせい</rt></ruby><ruby>分析<rt>ぶんせき</rt></ruby>では、<ruby>運搬<rt>うんぱん</rt></ruby>の<ruby>開始<rt>かいし</rt></ruby>から<ruby>完了<rt>かんりょう</rt></ruby>までの<ruby>運搬<rt>うんぱん</rt></ruby><ruby>状態<rt>じょうたい</rt></ruby>を、「0」から「4」までの<ruby>活性<rt>かっせい</rt></ruby><ruby>示数<rt></rt></ruby>で<ruby>表<rt>あらわ</rt></ruby>す。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．ユニットロードシステムとは、<ruby>個々<rt>ここ</rt></ruby>の<ruby>貨物<rt>かもつ</rt></ruby>をある<ruby>単位<rt>たんい</rt></ruby>にまとめた<ruby>状態<rt>じょうたい</rt></ruby>で、<ruby>一連<rt>いちれん</rt></ruby>の<ruby>輸送<rt>ゆそう</rt></ruby>、<ruby>保管<rt>ほかん</rt></ruby>、<ruby>荷役<rt>にやく</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>い、それぞれに<ruby>効果<rt>こうか</rt></ruby>をもたらすことができるシステムのことである。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>エ．<ruby>合理的<rt>ごうりてき</rt></ruby>なマテリアルハンドリングを<ruby>行<rt>おこな</rt></ruby>うための<ruby>原則<rt>げんそく</rt></ruby>は、<ruby>貨物<rt>かもつ</rt></ruby>の<ruby>活性<rt>かっせい</rt></ruby><ruby>関係<rt>かんけい</rt></ruby>の<ruby>原則<rt>げんそく</rt></ruby>、<ruby>自動化<rt>じどうか</rt></ruby><ruby>関係<rt>かんけい</rt></ruby>の<ruby>原則<rt>げんそく</rt></ruby>、<ruby>労力<rt>ろうりょく</rt></ruby>・<ruby>作業<rt>さぎょう</rt></ruby><ruby>関係<rt>かんけい</rt></ruby>の<ruby>原則<rt>げんそく</rt></ruby>、<ruby>情報化<rt>じょうほうか</rt></ruby>の<ruby>原則<rt>げんそく</rt></ruby>に<ruby>分類<rt>ぶんるい</rt></ruby>される。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21038  -->
+  <question type="multichoice">
+    <name>
+      <text>問題25　一般的な商品の包装の機能として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>25　<ruby>一般的<rt>いっぱんてき</rt></ruby>な<ruby>商品<rt>しょうひん</rt></ruby>の<ruby>包装<rt>ほうそう</rt></ruby>の<ruby>機能<rt>きのう</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>内容物<rt>ないようぶつ</rt></ruby>の<ruby>保護<rt>ほご</rt></ruby> </p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>内容物<rt>ないようぶつ</rt></ruby>の<ruby>情報<rt>じょうほう</rt></ruby><ruby>提供<rt>ていきょう</rt></ruby> </p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>荷役時<rt>にやくじ</rt></ruby>の<ruby>取扱<rt>とりあつか</rt></ruby>いの<ruby>利便性<rt>りべんせい</rt></ruby> </p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>エ．<ruby>配送時<rt>はいそうじ</rt></ruby>の<ruby>誤<rt>あやま</rt></ruby><ruby>配送<rt>はいそう</rt></ruby><ruby>防止<rt>ぼうし</rt></ruby></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21045  -->
+  <question type="multichoice">
+    <name>
+      <text>問題26　品質と品質特性に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<ruby><rb>問題</rb><rt>もんだい</rt></ruby>26　<ruby><rb>品質</rb><rt>ひんしつ</rt></ruby>と<ruby><rb>品質</rb><rt>ひんしつ</rt></ruby><ruby><rb>特性</rb><rt>とくせい</rt></ruby>に<ruby><rb>関</rb><rt>かん</rt></ruby>する<ruby><rb>記述</rb><rt>きじゅつ</rt></ruby>として<ruby><rb>最</rb><rt>もっと</rt></ruby>も<ruby><rb>不適切</rb><rt>ふてきせつ</rt></ruby>なものは、<ruby><rb>次</rb><rt>つぎ</rt></ruby>のうちどれか。<br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text>ア．品質特性とは、品質の定義で定めている「使用目的を満たしているかどうかを決定する固有の性質・性能」のことであり、できるだけ定性的に示されることが望ましい。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>イ．真の特性とは、顧客が要求している品質のことで、代用特性は真の特性の代わりとなる特性である。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>ウ．製品やサービスの品質においては、社会的責任の重要性が高まってきており、製品のライフサイクル全体を通して品質を保証する必要がある。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>エ．安全性は品質特性の1つである。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 7991  -->
+  <question type="multichoice">
+    <name>
+      <text>問題27　データ間の関係を定量的に把握できる手法として最も適切なのは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text>問題27　データ間の関係を定量的に把握できる手法として最も適切なのは、次のうちどれか。</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>ア．連関図</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>イ．散布図</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>ウ．系統図</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>エ．マトリックス図</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 7992  -->
+  <question type="multichoice">
+    <name>
+      <text>問題28　検査情報をフィードバックすることは重要であるが、その目的として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text>問題28　検査情報をフィードバックすることは重要であるが、その目的として最も不適切なものは、次のうちどれか。</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>ア．作業標準作成担当にフィードバックして、作業標準の見直しを図るため。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>イ．外注や協力工場にフィードバックして、外注管理の改善を図るため。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>ウ．前工程にフィードバックして、不適合発生の要因分析を行うため。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>エ．検査員にフィードバックして、検査合格率を調整するため。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 7993  -->
+  <question type="multichoice">
+    <name>
+      <text>問題29　製造物責任に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text>問題29　製造物責任に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>ア．製品の欠陥のうち、製造上の欠陥とは製造物が設計や仕様どおりに製造されなかったために安全性を欠いたことをいう。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>イ．製造物責任法では、製造者に過失があり、製造した製品で被害が発生したときに、被害者に賠償することとされている。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>ウ．製造者又は販売者は、安全設計では予期しない使い方や誤使用などに対応できない場合、使用者に注意を喚起するための警告ラベルの貼付や使用上の注意などを明記することも重要である。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>エ．市場での安全にかかわる品質問題の発生に対する事前の対応は、訴訟の提起に備える製造物責任防御と消費者に安全な製品を供給する製品安全の2つに分けて考えることができる。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21015  -->
+  <question type="multichoice">
+    <name>
+      <text>問題3　IEにおける時間研究に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>3　IEにおける<ruby>時間<rt>じかん</rt></ruby><ruby>研究<rt>けんきゅう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>作業<rt>さぎょう</rt></ruby><ruby>条件<rt>じょうけん</rt></ruby>の<ruby>調査<rt>ちょうさ</rt></ruby><ruby>項目<rt>こうもく</rt></ruby>として、<ruby>作業者<rt>さぎょうしゃ</rt></ruby>の<ruby>氏名<rt>しめい</rt></ruby>、<ruby>年齢<rt>ねんれい</rt></ruby>、<ruby>作業<rt>さぎょう</rt></ruby><ruby>熟練度<rt>じゅくれんど</rt></ruby>、<ruby>作業場<rt>さぎょうば</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>や<ruby>湿度<rt>しつど</rt></ruby>などがある。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>作業<rt>さぎょう</rt></ruby>の<ruby>測定<rt>そくてい</rt></ruby><ruby>単位<rt>たんい</rt></ruby>として、<ruby>一般<rt>いっぱん</rt></ruby>に<ruby>要素<rt>ようそ</rt></ruby><ruby>作業<rt>さぎょう</rt></ruby>の<ruby>細<rt>こま</rt></ruby>かさとする。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>作業<rt>さぎょう</rt></ruby>の<ruby>分割<rt>ぶんかつ</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う<ruby>時<rt>とき</rt></ruby>の<ruby>留意点<rt>りゅういてん</rt></ruby>として、<ruby>手<rt>て</rt></ruby><ruby>扱<rt>あつか</rt></ruby>い<ruby>作業<rt>さぎょう</rt></ruby>と<ruby>機械<rt>きかい</rt></ruby><ruby>作業<rt>さぎょう</rt></ruby>とを<ruby>分<rt>わ</rt></ruby>けておく。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>エ．<ruby>基準<rt>きじゅん</rt></ruby>とする<ruby>作業<rt>さぎょう</rt></ruby><ruby>速度<rt>そくど</rt></ruby>を<ruby>考慮<rt>こうりょ</rt></ruby>して、<ruby>測定<rt>そくてい</rt></ruby>した<ruby>時間値<rt>じかんち</rt></ruby>を<ruby>修正<rt>しゅうせい</rt></ruby>する<ruby>手続<rt>てつづ</rt></ruby>きを<ruby>基準化<rt>きじゅんか</rt></ruby>と<ruby>呼<rt>よ</rt></ruby>ぶ。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 7995  -->
+  <question type="multichoice">
+    <name>
+      <text>問題30　原価管理の体系と管理サイクルとして最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text>問題30　原価管理の体系と管理サイクルとして最も不適切なものは、次のうちどれか。</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text>ア．標準原価計算は、製造段階の原価低減に役立つ原価管理手法である。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>イ．原価企画は、製品の開発・設計段階で原価で作り込む原価管理手法である。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>ウ．原価改善は、IEなどの手法を用いて作業そのものの改善を行うことで実現する。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>エ．原価企画は、VEなどの手法を用いて源流管理を行うことが重要である。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21200  -->
+  <question type="multichoice">
+    <name>
+      <text>問題31　原価の構成に関する記述として最も不適切なのは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>31　<ruby>原価<rt>げんか</rt></ruby>の<ruby>構成<rt>こうせい</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なのは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．原価の3要素とは、材料費、労務費及び経費のことである。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>イ．総原価は製造原価に等しい。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．原価は、操業度との関連によって、固定費と変動費とに分類される。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．原価は、製品との関連によって、直接費と間接費とに分類される。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 7997  -->
+  <question type="multichoice">
+    <name>
+      <text>問題32　原価計算方法に関する記述として最も適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text>問題32　原価計算方法に関する記述として最も適切なものは、次のうちどれか。</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>ア．単純総合原価計算は、単一製品を２つ以上の連続する工程で生産する場合に適用する原価計算の方法の１つである。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>イ．標準原価計算では、生産活動において原価標準を決めておき、標準原価と実際原価の差異分析を行う。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>ウ．標準原価計算において、数量差異の計算は、標準価格と実際価格の差額に実際消費量を乗じたものである。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>エ．連産品の原価計算は、同一原料から単一グレードの製品が産出される場合に適用される原価計算の手法である。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 7998  -->
+  <question type="multichoice">
+    <name>
+      <text>問題33　原価低減の方法についての記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text>問題33　原価低減の方法についての記述として最も不適切なものは、次のうちどれか。</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>ア．直接材料費の原価低減には、製品の開発・設計段階における原価企画においてＶＥを行うことが有効である。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>イ．直接労務費の原価低減には、モノを探す、手待ちする、手直しや修正作業など、付加価値を生まない時間の徹底的な短縮が有効である。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>ウ．直接経費である製品に関わる特許使用料の総額を低減させるには、生産段階で生産設備の操業度を上げることが有効である。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>エ．間接部門の原価低減には、近年ますます増加する間接業務の見直しが有効である。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 7999  -->
+  <question type="multichoice">
+    <name>
+      <text>問題34　物流部門における納入時のトラブルを未然に防止する方法として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text>問題34　物流部門における納入時のトラブルを未然に防止する方法として最も不適切なものは、次のうちどれか。</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>ア．納入時に製品の破損や傷つきがないように、梱包方法を工夫する。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>イ．納入時の運搬作業にバラツキが出ないように、運搬作業を標準化する。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>ウ．納入時に正しく配送されるように、住所や宛先をデータベースで管理する。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>エ．納入時に道路混雑を踏まえ、搬送時間を最小化するルートを固定化する。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 8000  -->
+  <question type="multichoice">
+    <name>
+      <text>問題35　納期遅延対応に関する記述として最も不適切なのは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text>問題35　納期遅延対応に関する記述として最も不適切なのは、次のうちどれか。</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>ア．納期遅延の件数を把握するとともに、納期遅延時間別の頻度分布表を作成し分析する。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>イ．納期遅延の真因を見極め、担当部門の責任体制を明確にし、担当者の責任を追及する。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>ウ．計画した納期と実際の納期との差異を正確に把握し、その原因を分析する。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>エ．納期遅延が頻発している場合、納期見積方法や計画の立て方を評価し改善する。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 8001  -->
+  <question type="multichoice">
+    <name>
+      <text>問題36　目で見る管理に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text>問題36　目で見る管理に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>ア．目で見る管理とは、状況が視覚を通してすぐに分かり、異常があったら、それに対する対策を速やかに立てて、実行に移す一連の体系のことをいう。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>イ．目で見る管理では、関係者だけでなく、工場勤務者の誰もが現場を目で見えるようにする必要がある。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>ウ．実際の生産現場の動きを見るだけでなく、かんばん等の情報を見ることも、目で見る管理の1つである。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>エ．製造三角図は、生産統制の目で見る管理ということができる。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 8002  -->
+  <question type="multichoice">
+    <name>
+      <text>問題37　労働安全衛生法に定める総括安全衛生管理者が統括管理すべき業務に関する記述として最も不適切なのは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text>問題37　労働安全衛生法に定める総括安全衛生管理者が統括管理すべき業務に関する記述として最も不適切なのは、次のうちどれか。</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>ア．リスクアセスメント及びその結果に基づく措置に関すること。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>イ．作業主任者の監督に関すること。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>ウ．安全衛生計画の作成、実施、評価及び改善に関すること。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>エ．労働災害の原因の調査及び再発防止対策に関すること。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 8003  -->
+  <question type="multichoice">
+    <name>
+      <text>問題38　労働安全衛生法で定める機械等に関する規制として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text>問題38　労働安全衛生法で定める機械等に関する規制として最も不適切なものは、次のうちどれか。</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text>ア．特定機械の検査証については有効期間が3年と定められており、更新には所定の性能検査を受けなければならない。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>イ．墜落危険防止の保護帽は、型式検定合格の表示が付されているものを使用しなければならない。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>ウ．定期自主検査を実施した場合は、その結果を記録し3年間保存しなければならない。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>エ．フォークリフトの年次定期自主検査は、特定自主検査業者等が行う特定自主検査としなければならない。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 8016  -->
+  <question type="multichoice">
+    <name>
+      <text>問題39　我が国でかつて問題となった四大公害病と、その主要な原因物質との組合せとして最も適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text>問題39　我が国でかつて問題となった四大公害病と、その主要な原因物質との組合せとして最も適切なものは、次のうちどれか。</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[ア．水俣病　　　 　&nbsp; &nbsp; ･･････ 原因物質：ヒ素]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>イ．イタイイタイ病　･･････ 原因物質：ダイオキシン</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[ウ．新潟水俣病　　&nbsp; &nbsp; ･･････ 原因物質：六価クロム]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[エ．四日市ぜんそく&nbsp; &nbsp; ･･････ 原因物質：硫黄化合物]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21016  -->
+  <question type="multichoice">
+    <name>
+      <text>問題4　連合作業分析のねらいとして最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>問題4　<ruby>問題<rt>もんだい</rt></ruby>4　<ruby>連合<rt>れんごう</rt></ruby><ruby>作業<rt>さぎょう</rt></ruby><ruby>分析<rt>ぶんせき</rt></ruby>のねらいとして<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>機械<rt>きかい</rt></ruby>の<ruby>改良<rt>かいりょう</rt></ruby>やれいあうと<ruby>配置<rt>はいち</rt></ruby>の<ruby>改善<rt>かいぜん</rt></ruby>の<ruby>検討<rt>けんとう</rt></ruby></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>イ．<ruby>作業<rt>さぎょう</rt></ruby><ruby>負担<rt>ふたん</rt></ruby>による<ruby>疲労<rt>ひろう</rt></ruby>の<ruby>検討<rt>けんとう</rt></ruby></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>作業者<rt>さぎょうしゃ</rt></ruby>の<ruby>作業<rt>さぎょう</rt></ruby><ruby>割分<rt>わりぶん</rt></ruby>の<ruby>検討<rt>けんとう</rt></ruby></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<ruby>準備<rt>じゅんび</rt></ruby><ruby>段<rt>だん</rt></ruby><ruby>取<rt>と</rt></ruby><ruby>作業<rt>さぎょう</rt></ruby>の<ruby>検討<rt>けんとう</rt></ruby></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 8006  -->
+  <question type="multichoice">
+    <name>
+      <text>問題40　大気汚染防止法に関する記述として最も適切なのは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text>問題40　大気汚染防止法に関する記述として最も適切なのは、次のうちどれか。</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text>ア．事業者は、ばい煙発生施設から排出される大気汚染物質の濃度の測定結果を10年間保存することが義務付けられている。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>イ．事業者は、ばい煙発生施設を設置する際には、都道府県知事に届け出なければならないが、変更するときは届出の必要はない。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>ウ．ばい煙の排出基準は、大気汚染物質の種類及び排出施設の種類・規模ごとに設定されている。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>エ．大気汚染により人の健康に係る被害が生じた場合、事業者及び都道府県知事の損害賠償の責任について定めている。</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21017  -->
+  <question type="multichoice">
+    <name>
+      <text>問題5　作業改善の活動に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>5　<ruby>作業<rt>さぎょう</rt></ruby><ruby>改善<rt>かいぜん</rt></ruby>の<ruby>活動<rt>かつどう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>部品箱<rt>ぶひんばこ</rt></ruby>が<ruby>作業者<rt>さぎょうしゃ</rt></ruby>の<ruby>最大<rt>さいだい</rt></ruby><ruby>作業域を<ruby>超<rt>こ</rt></ruby>える<ruby>位置<rt>いち</rt></ruby>にあるため、<ruby>部品<rt>ぶひん</rt></ruby>を<ruby>取<rt>と</rt></ruby>る<ruby>際<rt>さい</rt></ruby>に<ruby>歩行<rt>ほこう</rt></ruby>が<ruby>発生<rt>はっせい</rt></ruby>するので、<ruby>部品箱<rt>ぶひんばこ</rt></ruby>の<ruby>置<rt>お</rt></ruby>き<ruby>場<rt>ば</rt></ruby>を<ruby>最大<rt>さいだい</rt></ruby><ruby>作業<rt>さぎょう</rt></ruby><ruby>域内<rt>いきない</rt></ruby>に<ruby>変更<rt>へんこう</rt></ruby>する<rt>さぎょういき</rt></ruby></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>搬送<rt>はんそう</rt></ruby><ruby>通路<rt>つうろ</rt></ruby>でのすれ<ruby>違<rt>ちが</rt></ruby>い<ruby>時<rt>じ</rt></ruby>の<ruby>台車<rt>だいしゃ</rt></ruby><ruby>同士<rt>どうし</rt></ruby>の<ruby>干渉<rt>かんしょう</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぎ、<ruby>物<rt>もの</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れを<ruby>良<rt>よ</rt></ruby>くするため、<ruby>台車<rt>だいしゃ</rt></ruby><ruby>使用時<rt>しようじ</rt></ruby>は<ruby>一方<rt>いっぽう</rt></ruby><ruby>通行<rt>つうこう</rt></ruby>のるーるを<ruby>設定<rt>せってい</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>複数<rt>ふくすう</rt></ruby><ruby>作業者<rt>さぎょうしゃ</rt></ruby>が<ruby>準備<rt>じゅんび</rt></ruby><ruby>作業時<rt>さぎょうじ</rt></ruby>に<ruby>共有<rt>きょうゆう</rt></ruby>して<ruby>使用<rt>しよう</rt></ruby>する<ruby>工具<rt>こうぐ</rt></ruby>は<ruby>最後<rt>さいご</rt></ruby>の<ruby>使用者<rt>しようしゃ</rt></ruby>が<ruby>保管<rt>ほかん</rt></ruby><ruby>管理<rt>かんり</rt></ruby>しているが、<ruby>各<rt>かく</rt></ruby><ruby>作業者<rt>さぎょうしゃ</rt></ruby>から<ruby>取<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>きやすい<ruby>場所<rt>ばしょ</rt></ruby>に<ruby>工具<rt>こうぐ</rt></ruby><ruby>置<rt>お</rt></ruby>き<ruby>台<rt>だい</rt></ruby>を<ruby>設置<rt>せっち</rt></ruby>して<ruby>保管<rt>ほかん</rt></ruby><ruby>管理<rt>かんり</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>エ．<ruby>作業者<rt>さぎょうしゃ</rt></ruby>は、<ruby>標準<rt>ひょうじゅん</rt></ruby><ruby>作業<rt>さぎょう</rt></ruby><ruby>手順<rt>てじゅん</rt></ruby>で<ruby>決<rt>き</rt></ruby>められたえあどらいばーでねじ<ruby>締<rt>し</rt></ruby>めを<ruby>行<rt>おこな</rt></ruby>っていたが、<ruby>作業<rt>さぎょう</rt></ruby><ruby>時間<rt>じかん</rt></ruby>を<ruby>短縮<rt>たんしゅく</rt></ruby>するため、<ruby>別<rt>べつ</rt></ruby>のどらいばーを<ruby>用<rt>もち</rt></ruby>いた<ruby>作業<rt>さぎょう</rt></ruby>に<ruby>自主的<rt>じしゅてき</rt></ruby>に<ruby>変更<rt>へんこう</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21018  -->
+  <question type="multichoice">
+    <name>
+      <text>問題6　5S活動に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>6　5S<ruby>活動<rt>かつどう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>不要品<rt>ふようひん</rt></ruby>は、るーるを<ruby>決<rt>き</rt></ruby>めて<ruby>廃棄<rt>はいき</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>守<rt>まも</rt></ruby>るべきるーるを<ruby>見<rt>み</rt></ruby>える<ruby>化<rt>か</rt></ruby>して、るーるの<ruby>内容<rt>ないよう</rt></ruby>を<ruby>周知<rt>しゅうち</rt></ruby>する。 </p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>ウ．<ruby>活動<rt>かつどう</rt></ruby><ruby>目標<rt>もくひょう</rt></ruby>は、<ruby>未<rt>み</rt></ruby><ruby>経験者<rt>けいけんしゃ</rt></ruby>のれべるに<ruby>合<rt>あ</rt></ruby>わせて<ruby>設定<rt>せってい</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<ruby>部品<rt>ぶひん</rt></ruby><ruby>棚<rt>たな</rt></ruby>には、<ruby>収納物<rt>しゅうのうぶつ</rt></ruby>と<ruby>管理者<rt>かんりしゃ</rt></ruby>の<ruby>表示<rt>ひょうじ</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21019  -->
+  <question type="multichoice">
+    <name>
+      <text>問題7　5S活動に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>7　5S<ruby>活動<rt>かつどう</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>ア．5S<ruby>活動<rt>かつどう</rt></ruby>において<ruby>躾<rt>しつけ</rt></ruby>の<ruby>基準<rt>きじゅん</rt></ruby>となるるーるは、<ruby>理由<rt>りゆう</rt></ruby>があって<ruby>決<rt>き</rt></ruby>めているので、<ruby>変更<rt>へんこう</rt></ruby>してはならない。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．5S<ruby>活動<rt>かつどう</rt></ruby>の<ruby>推進<rt>すいしん</rt></ruby><ruby>維持<rt>いじ</rt></ruby>のため、<ruby>巡回者<rt>じゅんかいしゃ</rt></ruby>が<ruby>日時<rt>にちじ</rt></ruby>、<ruby>頻度<rt>ひんど</rt></ruby>、ちぇっく<ruby>項目<rt>こうもく</rt></ruby>、<ruby>評価<rt>ひょうか</rt></ruby><ruby>基準<rt>きじゅん</rt></ruby>を<ruby>決<rt>き</rt></ruby>めてちぇっくりすとを<ruby>作成<rt>さくせい</rt></ruby>し、<ruby>職場<rt>しょくば</rt></ruby>を<ruby>巡回<rt>じゅんかい</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．5S<ruby>活動<rt>かつどう</rt></ruby>の<ruby>活性化<rt>かっせいか</rt></ruby>のため、<ruby>活動<rt>かつどう</rt></ruby>の<ruby>効果<rt>こうか</rt></ruby>、<ruby>工夫<rt>くふう</rt></ruby>、<ruby>努力<rt>どりょく</rt></ruby>を<ruby>評価<rt>ひょうか</rt></ruby><ruby>基準<rt>きじゅん</rt></ruby>とし、<ruby>自己<rt>じこ</rt></ruby><ruby>点検<rt>てんけん</rt></ruby>、<ruby>相互<rt>そうご</rt></ruby><ruby>点検<rt>てんけん</rt></ruby>などにより<ruby>評価<rt>ひょうか</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>い<ruby>表彰<rt>ひょうしょう</rt></ruby>する<ruby>制度<rt>せいど</rt></ruby>を<ruby>設<rt>もう</rt></ruby>ける。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．1<ruby>年間<rt>ねんかん</rt></ruby>の5S<ruby>活動<rt>かつどう</rt></ruby>を<ruby>適切<rt>てきせつ</rt></ruby>に<ruby>実施<rt>じっし</rt></ruby>するため、5S<ruby>推進<rt>すいしん</rt></ruby>りーだーは<ruby>昨年度<rt>さくねんど</rt></ruby>の<ruby>活動<rt>かつどう</rt></ruby>を<ruby>総括<rt>そうかつ</rt></ruby>して<ruby>課題<rt>かだい</rt></ruby>を<ruby>明確化<rt>めいかくか</rt></ruby>し、<ruby>本<rt>ほん</rt></ruby><ruby>年度<rt>ねんど</rt></ruby>の<ruby>基本<rt>きほん</rt></ruby><ruby>方針<rt>ほうしん</rt></ruby>や<ruby>重点<rt>じゅうてん</rt></ruby><ruby>課題<rt>かだい</rt></ruby>を<ruby>設定<rt>せってい</rt></ruby>し<ruby>職場<rt>しょくば</rt></ruby>に<ruby>公表<rt>こうひょう</rt></ruby>し<ruby>周知<rt>しゅうち</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21020  -->
+  <question type="multichoice">
+    <name>
+      <text>問題8　緩衝（バッファ）に関する記述として最も不適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>8　<ruby>緩衝<rt>かんしょう</rt></ruby>（ばっふぁ）に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>不適切<rt>ふてきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>ア．<ruby>製品<rt>せいひん</rt></ruby><ruby>在庫<rt>ざいこ</rt></ruby>を、<ruby>各<rt>かく</rt></ruby><ruby>生産<rt>せいさん</rt></ruby><ruby>工程間<rt>こうていかん</rt></ruby>にも<ruby>置<rt>お</rt></ruby>くことで、<ruby>緩衝<rt>かんしょう</rt></ruby>としての<ruby>役割<rt>やくわり</rt></ruby>を<ruby>果<rt>は</rt></ruby>たす。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>緩衝<rt>かんしょう</rt></ruby>の<ruby>方策<rt>ほうさく</rt></ruby>の<ruby>種類<rt>しゅるい</rt></ruby>には、もの、<ruby>能力<rt>のうりょく</rt></ruby><ruby>及<rt>およ</rt></ruby>び<ruby>時間<rt>じかん</rt></ruby>の3つがある。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ウ．<ruby>原材料<rt>げんざいりょう</rt></ruby>・<ruby>部品<rt>ぶひん</rt></ruby>に<ruby>納入<rt>のうにゅう</rt></ruby><ruby>遅<rt>おく</rt></ruby>れが<ruby>生<rt>しょう</rt></ruby>じた<ruby>場合<rt>ばあい</rt></ruby>でも<ruby>生産<rt>せいさん</rt></ruby><ruby>計画<rt>けいかく</rt></ruby>を<ruby>守<rt>まも</rt></ruby>れるようにするため、<ruby>安全<rt>あんぜん</rt></ruby><ruby>在庫<rt>ざいこ</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>となる。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<ruby>予測<rt>よそく</rt></ruby><ruby>困難<rt>こんなん</rt></ruby>な<ruby>要因<rt>よういん</rt></ruby>による<ruby>生産<rt>せいさん</rt></ruby><ruby>時間<rt>じかん</rt></ruby>ろすを<ruby>工程<rt>こうてい</rt></ruby>で<ruby>防止<rt>ぼうし</rt></ruby>するために、<ruby>仕掛品<rt>しかけひん</rt></ruby><ruby>在庫<rt>ざいこ</rt></ruby>が<ruby>活用<rt>かつよう</rt></ruby>される。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 21021  -->
+  <question type="multichoice">
+    <name>
+      <text>問題9　見込生産に関する記述として最も適切なものは、次のうちどれか。</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><ruby>問題<rt>もんだい</rt></ruby>9　<ruby>見込<rt>みこみ</rt></ruby><ruby>生産<rt>せいさん</rt></ruby>に<ruby>関<rt>かん</rt></ruby>する<ruby>記述<rt>きじゅつ</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>適切<rt>てきせつ</rt></ruby>なものは、<ruby>次<rt>つぎ</rt></ruby>のうちどれか。</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ア．<ruby>特定<rt>とくてい</rt></ruby>の<ruby>顧客<rt>こきゃく</rt></ruby>からの<ruby>注文<rt>ちゅうもん</rt></ruby>に<ruby>応<rt>おう</rt></ruby>じて<ruby>生産<rt>せいさん</rt></ruby>する<ruby>方式<rt>ほうしき</rt></ruby>である。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>イ．<ruby>製品<rt>せいひん</rt></ruby><ruby>仕様<rt>しよう</rt></ruby>は<ruby>主<rt>しゅ</rt></ruby>として<ruby>顧客<rt>こきゃく</rt></ruby>が<ruby>決<rt>き</rt></ruby>めるため、<ruby>受注<rt>じゅちゅう</rt></ruby>の<ruby>時<rt>とき</rt></ruby>まで<ruby>不<rt>ふ</rt></ruby><ruby>確定<rt>かくてい</rt></ruby>である。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>ウ．<ruby>生産者側<rt>せいさんしゃがわ</rt></ruby>が<ruby>市場<rt>しじょう</rt></ruby>の<ruby>需要<rt>じゅよう</rt></ruby>を<ruby>見越<rt>みこ</rt></ruby>した<ruby>製品<rt>せいひん</rt></ruby>を<ruby>市場<rt>しじょう</rt></ruby>に<ruby>出荷<rt>しゅっか</rt></ruby>する<ruby>生産<rt>せいさん</rt></ruby><ruby>方式<rt>ほうしき</rt></ruby>である。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>エ．<ruby>受注<rt>じゅちゅう</rt></ruby><ruby>変動<rt>へんどう</rt></ruby>への<ruby>対応<rt>たいおう</rt></ruby>は、<ruby>生産<rt>せいさん</rt></ruby><ruby>能力<rt>のうりょく</rt></ruby>により<ruby>調整<rt>ちょうせい</rt></ruby>する。</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>
