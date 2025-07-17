@@ -1,9 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import json
 import re
 import os
 import time
-import xml.etree.ElementTree as ET
-from xml.dom import minidom
 from collections import defaultdict
 
 # Compile regex patterns
@@ -44,11 +45,6 @@ def load_dictionary(dictionary_path):
                 kanji_count += 1
         
         # Thêm full-width numbers với hiragana readings
-        fullwidth_numbers = {
-            '０': 'ゼロ', '１': 'いち', '２': 'に', '３': 'さん', '４': 'よん',
-            '５': 'ご', '６': 'ろく', '７': 'なな', '８': 'はち', '９': 'きゅう'
-        }
-        
         for fw_num, hiragana in fullwidth_numbers.items():
             optimized_dict[fw_num] = hiragana
             kanji_count += 1
@@ -84,10 +80,8 @@ def is_choice_marker(text, pos):
     """Kiểm tra xem vị trí có phải là ký tự lựa chọn + dấu chấm không"""
     if pos == 0:
         return False
-    # Kiểm tra ký tự trước pos có phải là ký tự lựa chọn không
     char_before = text[pos-1]
     if char_before in 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン':
-        # Kiểm tra ký tự tại pos có phải là dấu chấm không
         if pos < len(text) and text[pos] == '．':
             return True
     return False
@@ -115,7 +109,6 @@ def find_kanji_matches(text, dictionary):
             if any(covered[i:i+length]):
                 continue
             
-            # Kiểm tra không phải là ký tự lựa chọn
             if is_choice_marker(text, i):
                 continue
                 
@@ -125,27 +118,9 @@ def find_kanji_matches(text, dictionary):
             if (cleaned_substring and 
                 has_kanji(cleaned_substring) and 
                 cleaned_substring in dictionary):
-                
-                # Kiểm tra xem sau substring có full-width number không
-                end_pos = i + length
-                if (end_pos < text_len and 
-                    FULLWIDTH_NUMBER_PATTERN.match(text[end_pos]) and
-                    cleaned_substring in ['問題', '問', '題']):  # Các từ thường đi kèm số
-                    # Tạo match kết hợp với number
-                    full_match = substring + text[end_pos]
-                    if cleaned_substring == '問題':
-                        reading = 'もんだい' + fullwidth_numbers.get(text[end_pos], '')
-                    else:
-                        reading = dictionary[cleaned_substring] + fullwidth_numbers.get(text[end_pos], '')
-                    matches.append((i, end_pos + 1, full_match, reading))
-                    # Đánh dấu vùng đã xử lý (bao gồm cả số)
-                    for j in range(i, end_pos + 1):
-                        covered[j] = True
-                else:
-                    matches.append((i, i + length, cleaned_substring, dictionary[cleaned_substring]))
-                    # Đánh dấu vùng đã xử lý
-                    for j in range(i, i + length):
-                        covered[j] = True
+                matches.append((i, i + length, cleaned_substring, dictionary[cleaned_substring]))
+                for j in range(i, i + length):
+                    covered[j] = True
     
     # Xử lý các full-width numbers đơn lẻ
     for i in range(text_len):
@@ -163,16 +138,15 @@ def find_kanji_matches(text, dictionary):
 
 def clean_kanji_word(word):
     """Làm sạch từ Kanji bằng cách loại bỏ ký tự không phải tiếng Nhật"""
-    cleaned = re.sub(r'[^\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff]', '', word)
+    cleaned = re.sub(r'[^\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff\uff10-\uff19]', '', word)
     return cleaned
 
 def add_ruby_to_text(text, dictionary):
-    """Thêm ruby annotations vào text, tránh xử lý ký tự lựa chọn"""
+    """Thêm ruby annotations vào text với format đúng cho Moodle"""
     if not text or not has_japanese(text) or has_ruby_tags(text):
         return text
     
     # Xử lý trước các pattern đặc biệt như "問題[số]"
-    # Pattern để tìm "問題" + full-width number
     pattern = r'問題([\uff10-\uff19])'
     def replace_problem_number(match):
         number = match.group(1)
@@ -181,7 +155,7 @@ def add_ruby_to_text(text, dictionary):
     
     processed_text = re.sub(pattern, replace_problem_number, text)
     
-    # Xử lý các từ còn lại (cả khi có ruby tags)
+    # Xử lý các từ còn lại
     matches = find_kanji_matches(processed_text, dictionary)
     if not matches:
         return processed_text
@@ -191,53 +165,37 @@ def add_ruby_to_text(text, dictionary):
     last_end = 0
     
     for start, end, kanji, hiragana in matches:
-        # Thêm text trước match
         result += processed_text[last_end:start]
-        # Thêm ruby tag
         result += f"<ruby>{kanji}<rt>{hiragana}</rt></ruby>"
         last_end = end
     
-    # Thêm phần còn lại
     result += processed_text[last_end:]
-    
     return result
 
 def process_cdata_content(content, dictionary):
-    """Xử lý nội dung trong CDATA section"""
+    """Xử lý nội dung trong CDATA section với format đúng"""
     if not content or not has_japanese(content) or has_ruby_tags(content):
         return content
     
-    # Xử lý từng phần text không nằm trong HTML tags
-    def process_text_segment(text_segment):
-        # Tránh xử lý nếu đã có ruby tags
-        if has_ruby_tags(text_segment):
-            return text_segment
-        return add_ruby_to_text(text_segment, dictionary)
-    
-    # Tìm và xử lý text nằm giữa các HTML tags
-    # Pattern để tìm text nằm ngoài tags
-    pattern = r'>([^<]*)<'
-    
-    def replace_text(match):
-        text_content = match.group(1)
-        processed = process_text_segment(text_content)
-        return f'>{processed}<'
-    
-    processed_content = re.sub(pattern, replace_text, content)
-    
-    # Xử lý text ở đầu và cuối không nằm trong tags
-    if not content.startswith('<'):
-        first_tag_pos = content.find('<')
-        if first_tag_pos > 0:
-            first_part = content[:first_tag_pos]
-            rest_part = content[first_tag_pos:]
-            processed_first = process_text_segment(first_part)
-            processed_content = processed_first + rest_part
-    
-    return processed_content
+    # Kiểm tra nếu content đã có <p> tags
+    if '<p>' in content:
+        # Xử lý text trong <p> tags
+        def process_p_content(match):
+            p_content = match.group(1)
+            processed = add_ruby_to_text(p_content, dictionary)
+            return f'<p>{processed}</p>'
+        
+        # Pattern để tìm nội dung trong <p> tags
+        p_pattern = r'<p>(.*?)</p>'
+        processed_content = re.sub(p_pattern, process_p_content, content, flags=re.DOTALL)
+        return processed_content
+    else:
+        # Nếu không có <p> tags, wrap với <p> và xử lý
+        processed = add_ruby_to_text(content, dictionary)
+        return f'<p>{processed}</p>'
 
 def process_xml_file(input_file, output_file, dictionary_path):
-    """Xử lý file XML và thêm ruby annotations"""
+    """Xử lý file XML và thêm ruby annotations với format đúng"""
     global missing_kanji
     missing_kanji.clear()
     
@@ -258,34 +216,23 @@ def process_xml_file(input_file, output_file, dictionary_path):
         print("Đang xử lý CDATA sections...")
         processed_cdata_count = 0
         
-        # Xử lý CDATA sections
-        def process_cdata_match(match):
-            nonlocal processed_cdata_count
-            cdata_content = match.group(1)
-            if has_japanese(cdata_content) and not has_ruby_tags(cdata_content):
-                processed_content = process_cdata_content(cdata_content, dictionary)
-                processed_cdata_count += 1
-                return f'<![CDATA[{processed_content}]]>'
-            return match.group(0)
-        
-        cdata_pattern = re.compile(r'<!\[CDATA\[(.*?)\]\]>', re.DOTALL)
-        xml_content = cdata_pattern.sub(process_cdata_match, xml_content)
-        
-        print("Đang xử lý text elements...")
+        # Xử lý tất cả <text> để đảm bảo bọc CDATA duy nhất
         processed_text_count = 0
-        
-        # Xử lý text elements không có CDATA
         def process_text_match(match):
-            nonlocal processed_text_count
             text_content = match.group(1)
+            # Nếu đã có CDATA thì giữ nguyên, nếu chưa thì thêm vào
+            if text_content.strip().startswith('<![CDATA['):
+                return f'<text>{text_content.strip()}</text>'
+            # Nếu có tiếng Nhật và chưa có ruby thì thêm ruby rồi bọc CDATA
             if has_japanese(text_content) and not has_ruby_tags(text_content):
                 processed_content = add_ruby_to_text(text_content, dictionary)
+                nonlocal processed_text_count
                 processed_text_count += 1
-                return f'<text>{processed_content}</text>'
-            return match.group(0)
-        
-        # Pattern để tìm <text>content</text> không có CDATA
-        text_pattern = re.compile(r'<text>([^<]*(?:(?!<text>|</text>)[^<]*)*)</text>', re.DOTALL)
+                return f'<text><![CDATA[{processed_content}]]></text>'
+            # Nếu không thì vẫn bọc CDATA
+            return f'<text><![CDATA[{text_content.strip()}]]></text>'
+
+        text_pattern = re.compile(r'<text>(.*?)</text>', re.DOTALL)
         xml_content = text_pattern.sub(process_text_match, xml_content)
         
         # Lưu file
@@ -302,7 +249,6 @@ def process_xml_file(input_file, output_file, dictionary_path):
         print(f"Từ Kanji không tìm thấy: {len(missing_kanji)}")
         print(f"Thời gian xử lý: {processing_time:.2f} giây")
         
-        # Lưu danh sách kanji thiếu
         if missing_kanji:
             save_missing_kanji_report(missing_kanji, f"{output_file}_missing_kanji.txt")
         
@@ -324,26 +270,26 @@ def save_missing_kanji_report(missing_kanji, report_file):
 
 def main():
     """Main function"""
-    input_file = "平成 25 年前期 - ĐỀ NĂM 25 KÌ TRƯỚC.xml"
-    output_file = "平成 25 年前期 - ĐỀ NĂM 25 KÌ TRƯỚC_ruby_fixed.xml"
     dictionary_file = "dictionary_full_jmdict.json"
-    
-    # Kiểm tra file tồn tại
-    if not os.path.exists(input_file):
-        print(f"Không tìm thấy file input: {input_file}")
-        return
-    
+    input_folder = "2025.7.14"
     if not os.path.exists(dictionary_file):
         print(f"Không tìm thấy dictionary: {dictionary_file}")
         return
-    
-    print("=== Chương trình thêm Ruby cho file XML (Fixed) ===")
-    print(f"Input file: {input_file}")
-    print(f"Output file: {output_file}")
+
+    if not os.path.exists(input_folder):
+        print(f"Không tìm thấy thư mục: {input_folder}")
+        return
+
+    print("=== Chương trình thêm Ruby cho tất cả file XML trong thư mục 2025.7.14 (Moodle Format) ===")
     print(f"Dictionary file: {dictionary_file}")
     print()
-    
-    process_xml_file(input_file, output_file, dictionary_file)
+
+    for filename in os.listdir(input_folder):
+        if filename.lower().endswith('.xml'):
+            input_file = os.path.join(input_folder, filename)
+            output_file = os.path.join(input_folder, filename.replace('.xml', '_ruby_moodle_format.xml'))
+            print(f"\n--- Đang xử lý: {input_file} ---")
+            process_xml_file(input_file, output_file, dictionary_file)
 
 if __name__ == "__main__":
     main()

@@ -8,19 +8,12 @@ from collections import defaultdict
 
 # Compile regex patterns
 KANJI_PATTERN = re.compile(r'[\u4e00-\u9fff]')
-JAPANESE_PATTERN = re.compile(r'[\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff\uff10-\uff19]')  # Thêm full-width numbers
+JAPANESE_PATTERN = re.compile(r'[\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff]')
 RUBY_PATTERN = re.compile(r'<ruby>.*?</ruby>', re.DOTALL)
 CHOICE_PATTERN = re.compile(r'^[アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン]\.', re.MULTILINE)
-FULLWIDTH_NUMBER_PATTERN = re.compile(r'[\uff10-\uff19]')  # Full-width numbers pattern
 
 # Set để lưu các kanji không tìm thấy
 missing_kanji = set()
-
-# Full-width numbers mapping
-fullwidth_numbers = {
-    '０': 'ゼロ', '１': 'いち', '２': 'に', '３': 'さん', '４': 'よん',
-    '５': 'ご', '６': 'ろく', '７': 'なな', '８': 'はち', '９': 'きゅう'
-}
 
 def load_dictionary(dictionary_path):
     """Đọc dictionary từ file JSON"""
@@ -43,16 +36,6 @@ def load_dictionary(dictionary_path):
                 optimized_dict[kanji] = hiragana
                 kanji_count += 1
         
-        # Thêm full-width numbers với hiragana readings
-        fullwidth_numbers = {
-            '０': 'ゼロ', '１': 'いち', '２': 'に', '３': 'さん', '４': 'よん',
-            '５': 'ご', '６': 'ろく', '７': 'なな', '８': 'はち', '９': 'きゅう'
-        }
-        
-        for fw_num, hiragana in fullwidth_numbers.items():
-            optimized_dict[fw_num] = hiragana
-            kanji_count += 1
-        
         # Sắp xếp theo độ dài giảm dần
         sorted_dict = dict(sorted(optimized_dict.items(), key=lambda x: len(x[0]), reverse=True))
         
@@ -69,8 +52,8 @@ def load_dictionary(dictionary_path):
         return {}
 
 def has_kanji(text):
-    """Kiểm tra xem text có chứa ký tự Kanji hoặc full-width number không"""
-    return bool(KANJI_PATTERN.search(text)) or bool(FULLWIDTH_NUMBER_PATTERN.search(text))
+    """Kiểm tra xem text có chứa ký tự Kanji không"""
+    return bool(KANJI_PATTERN.search(text))
 
 def has_japanese(text):
     """Kiểm tra xem text có chứa ký tự tiếng Nhật không"""
@@ -101,14 +84,6 @@ def find_kanji_matches(text, dictionary):
     text_len = len(text)
     covered = [False] * text_len
     
-    # Đánh dấu các vùng có ruby tags để bỏ qua
-    ruby_matches = list(RUBY_PATTERN.finditer(text))
-    for ruby_match in ruby_matches:
-        start, end = ruby_match.span()
-        for i in range(start, end):
-            if i < text_len:
-                covered[i] = True
-    
     # Tìm từ dài trước (ưu tiên từ ghép)
     for length in range(min(10, text_len), 0, -1):
         for i in range(text_len - length + 1):
@@ -125,33 +100,10 @@ def find_kanji_matches(text, dictionary):
             if (cleaned_substring and 
                 has_kanji(cleaned_substring) and 
                 cleaned_substring in dictionary):
-                
-                # Kiểm tra xem sau substring có full-width number không
-                end_pos = i + length
-                if (end_pos < text_len and 
-                    FULLWIDTH_NUMBER_PATTERN.match(text[end_pos]) and
-                    cleaned_substring in ['問題', '問', '題']):  # Các từ thường đi kèm số
-                    # Tạo match kết hợp với number
-                    full_match = substring + text[end_pos]
-                    if cleaned_substring == '問題':
-                        reading = 'もんだい' + fullwidth_numbers.get(text[end_pos], '')
-                    else:
-                        reading = dictionary[cleaned_substring] + fullwidth_numbers.get(text[end_pos], '')
-                    matches.append((i, end_pos + 1, full_match, reading))
-                    # Đánh dấu vùng đã xử lý (bao gồm cả số)
-                    for j in range(i, end_pos + 1):
-                        covered[j] = True
-                else:
-                    matches.append((i, i + length, cleaned_substring, dictionary[cleaned_substring]))
-                    # Đánh dấu vùng đã xử lý
-                    for j in range(i, i + length):
-                        covered[j] = True
-    
-    # Xử lý các full-width numbers đơn lẻ
-    for i in range(text_len):
-        if not covered[i] and FULLWIDTH_NUMBER_PATTERN.match(text[i]):
-            matches.append((i, i + 1, text[i], fullwidth_numbers.get(text[i], text[i])))
-            covered[i] = True
+                matches.append((i, i + length, cleaned_substring, dictionary[cleaned_substring]))
+                # Đánh dấu vùng đã xử lý
+                for j in range(i, i + length):
+                    covered[j] = True
     
     # Ghi lại các Kanji không tìm thấy
     for i in range(text_len):
@@ -171,20 +123,9 @@ def add_ruby_to_text(text, dictionary):
     if not text or not has_japanese(text) or has_ruby_tags(text):
         return text
     
-    # Xử lý trước các pattern đặc biệt như "問題[số]"
-    # Pattern để tìm "問題" + full-width number
-    pattern = r'問題([\uff10-\uff19])'
-    def replace_problem_number(match):
-        number = match.group(1)
-        number_reading = fullwidth_numbers.get(number, number)
-        return f'<ruby>問題<rt>もんだい</rt></ruby><ruby>{number}<rt>{number_reading}</rt></ruby>'
-    
-    processed_text = re.sub(pattern, replace_problem_number, text)
-    
-    # Xử lý các từ còn lại (cả khi có ruby tags)
-    matches = find_kanji_matches(processed_text, dictionary)
+    matches = find_kanji_matches(text, dictionary)
     if not matches:
-        return processed_text
+        return text
     
     # Xây dựng text mới với ruby tags
     result = ""
@@ -192,13 +133,13 @@ def add_ruby_to_text(text, dictionary):
     
     for start, end, kanji, hiragana in matches:
         # Thêm text trước match
-        result += processed_text[last_end:start]
+        result += text[last_end:start]
         # Thêm ruby tag
         result += f"<ruby>{kanji}<rt>{hiragana}</rt></ruby>"
         last_end = end
     
     # Thêm phần còn lại
-    result += processed_text[last_end:]
+    result += text[last_end:]
     
     return result
 
@@ -325,7 +266,7 @@ def save_missing_kanji_report(missing_kanji, report_file):
 def main():
     """Main function"""
     input_file = "平成 25 年前期 - ĐỀ NĂM 25 KÌ TRƯỚC.xml"
-    output_file = "平成 25 年前期 - ĐỀ NĂM 25 KÌ TRƯỚC_ruby_fixed.xml"
+    output_file = "平成 25 年前期 - ĐỀ NĂM 25 KÌ TRƯỚC_ruby_improved.xml"
     dictionary_file = "dictionary_full_jmdict.json"
     
     # Kiểm tra file tồn tại
@@ -337,7 +278,7 @@ def main():
         print(f"Không tìm thấy dictionary: {dictionary_file}")
         return
     
-    print("=== Chương trình thêm Ruby cho file XML (Fixed) ===")
+    print("=== Chương trình thêm Ruby cho file XML (Improved) ===")
     print(f"Input file: {input_file}")
     print(f"Output file: {output_file}")
     print(f"Dictionary file: {dictionary_file}")
