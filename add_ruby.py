@@ -111,13 +111,13 @@ def create_ruby_element(kanji, hiragana, source_run=None):
     # Copy format từ source run
     copy_run_formatting(source_run, rt_rpr)
     
-    # Kích thước font cho ruby text - tăng lên một chút để dễ đọc
+    # Kích thước font cho ruby text - giảm xuống 10 (5pt)
     rt_sz = OxmlElement('w:sz')
-    rt_sz.set(qn('w:val'), '16')  # Tăng từ 12 lên 16 (8pt) cho dễ đọc hơn
+    rt_sz.set(qn('w:val'), '10')  # 5pt cho ruby
     rt_rpr.append(rt_sz)
-    
+
     rt_szcs = OxmlElement('w:szCs')
-    rt_szcs.set(qn('w:val'), '16')  # Tăng từ 12 lên 16 (8pt) cho dễ đọc hơn
+    rt_szcs.set(qn('w:val'), '10')  # 5pt cho ruby
     rt_rpr.append(rt_szcs)
     
     rt_r.append(rt_rpr)
@@ -251,15 +251,12 @@ def add_ruby_to_paragraph_compact(paragraph, dictionary):
         if spacing is None:
             spacing = OxmlElement('w:spacing')
             pPr.append(spacing)
-        
         # Giảm line spacing để compact hơn
-        spacing.set(qn('w:line'), '400')  # Giảm từ 480 xuống 400 (20pt line spacing)
+        spacing.set(qn('w:line'), '360')  # 18pt line spacing
         spacing.set(qn('w:lineRule'), 'exact')
-        
         # Giảm space before và after để compact hơn
-        spacing.set(qn('w:before'), '100')   # Giảm từ 120 xuống 80 (4pt space before)
-        spacing.set(qn('w:after'), '40')    # Giảm từ 40 xuống 20 (1pt space after)
-        
+        spacing.set(qn('w:before'), '60')   # 3pt space before
+        spacing.set(qn('w:after'), '20')    # 1pt space after
     except:
         pass
     
@@ -503,9 +500,9 @@ def create_japanese_run_with_font_size(paragraph, text, font_size_pt=11):
     return run
 
 def main():
-    input_file = "kienthucchungfinal.docx"
-    output_file = "kienthucchungfinal_temp.docx"  # Giảm spacing giữa các dòng
-    dictionary_file = "dictionary_full_jmdict.json"
+    input_file = "KHÔNG FURIGANA - KIẾN THỨC CHUNG.docx"
+    output_file = "KHÔNG FURIGANA - KIẾN THỨC CHUNG ruby.docx"  # Giảm spacing giữa các dòng
+    dictionary_file = "dictionary_hiragana_chunks_removed_from_value.json"
     
     print("=== Chương trình thêm Ruby (không highlight) cho file Word ===")
     print(f"Input file: {input_file}")
