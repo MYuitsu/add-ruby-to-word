@@ -113,13 +113,13 @@ def create_ruby_element(kanji, hiragana, source_run=None):
     # Copy format từ source run
     copy_run_formatting(source_run, rt_rpr)
     
-    # Kích thước font cho ruby text - giảm xuống 10 (5pt)
+    # Kích thước font cho ruby text - tăng lên 12 (6pt)
     rt_sz = OxmlElement('w:sz')
-    rt_sz.set(qn('w:val'), '10')  # 5pt cho ruby
+    rt_sz.set(qn('w:val'), '12')  # 6pt cho ruby
     rt_rpr.append(rt_sz)
 
     rt_szcs = OxmlElement('w:szCs')
-    rt_szcs.set(qn('w:val'), '10')  # 5pt cho ruby
+    rt_szcs.set(qn('w:val'), '12')  # 6pt cho ruby
     rt_rpr.append(rt_szcs)
     
     rt_r.append(rt_rpr)
@@ -229,6 +229,20 @@ def remove_section_breaks_and_add_spacing(paragraph):
 
 
 def add_ruby_to_paragraph_preserve_runs(paragraph, dictionary):
+    # Chỉ tăng line spacing nếu paragraph có tiếng Nhật
+    if has_japanese(paragraph.text):
+        try:
+            pPr = paragraph._element.get_or_add_pPr()
+            spacing = pPr.find(qn('w:spacing'))
+            if spacing is None:
+                spacing = OxmlElement('w:spacing')
+                pPr.append(spacing)
+            spacing.set(qn('w:line'), '380')  # 21pt line spacing
+            spacing.set(qn('w:lineRule'), 'exact')
+            spacing.set(qn('w:before'), '60')   # 3pt space before
+            spacing.set(qn('w:after'), '20')    # 1pt space after
+        except:
+            pass
     """Thêm ruby vào paragraph mà vẫn giữ nguyên định dạng, run, ký tự đặc biệt, dấu đầu dòng, xuống dòng..."""
     # Xử lý section break trước khi kiểm tra text
     section_break_removed = remove_section_breaks_and_add_spacing(paragraph)
