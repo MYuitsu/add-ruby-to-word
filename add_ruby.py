@@ -62,7 +62,9 @@ def has_japanese(text):
 def clean_kanji_word(word):
     """Làm sạch từ Kanji bằng cách loại bỏ ký tự không phải tiếng Nhật"""
     # Chỉ giữ lại ký tự Kanji, Hiragana, Katakana
-    cleaned = re.sub(r'[^\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff]', '', word)
+    # Giữ lại số thường (0-9) và số fullwidth (０-９)
+    # Giữ lại Kanji, Hiragana, Katakana, số, và Kanji thành phần (radical)
+    cleaned = re.sub(r'[^\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff\u2f00-\u2fdf0-9０-９]', '', word)
     return cleaned
 
 def extract_kanji_words(text):
@@ -225,73 +227,65 @@ def remove_section_breaks_and_add_spacing(paragraph):
             return True
     return False
 
-def add_ruby_to_paragraph_compact(paragraph, dictionary):
-    """Thêm ruby vào paragraph với thuật toán cải tiến và spacing tối ưu"""
-    full_text = paragraph.text
-    
+
+def add_ruby_to_paragraph_preserve_runs(paragraph, dictionary):
+    """Thêm ruby vào paragraph mà vẫn giữ nguyên định dạng, run, ký tự đặc biệt, dấu đầu dòng, xuống dòng..."""
     # Xử lý section break trước khi kiểm tra text
     section_break_removed = remove_section_breaks_and_add_spacing(paragraph)
-    
-    if not full_text or not has_japanese(full_text):
+    if not paragraph.runs or not has_japanese(paragraph.text):
         return section_break_removed
-    
-    # Lấy format từ run đầu tiên để áp dụng cho ruby
-    first_run = get_first_run_from_paragraph(paragraph)
-    
-    # SỬA: Xử lý tất cả paragraph, không giới hạn độ dài
-    matches = find_kanji_matches_optimized(full_text, dictionary)
-    
-    if not matches:
-        return section_break_removed
-    
-    # Đặt line spacing phù hợp cho paragraph có ruby
-    try:
-        pPr = paragraph._element.get_or_add_pPr()
-        spacing = pPr.find(qn('w:spacing'))
-        if spacing is None:
-            spacing = OxmlElement('w:spacing')
-            pPr.append(spacing)
-        # Giảm line spacing để compact hơn
-        spacing.set(qn('w:line'), '360')  # 18pt line spacing
-        spacing.set(qn('w:lineRule'), 'exact')
-        # Giảm space before và after để compact hơn
-        spacing.set(qn('w:before'), '60')   # 3pt space before
-        spacing.set(qn('w:after'), '20')    # 1pt space after
-    except:
-        pass
-    
-    # Xóa tất cả runs hiện tại
-    for run in paragraph.runs:
+
+    # Lưu lại các run gốc
+    old_runs = list(paragraph.runs)
+    # Xóa toàn bộ run khỏi paragraph (nhưng sẽ add lại từng phần, giữ định dạng)
+    for run in old_runs:
         run._element.getparent().remove(run._element)
-    
-    # Xây dựng lại paragraph với ruby
-    last_pos = 0
-    
-    for start, end, kanji, hiragana in matches:
-        # Thêm text trước kanji với font size 11pt nếu có tiếng Nhật
-        if start > last_pos:
-            before_text = full_text[last_pos:start]
-            if before_text:
-                if has_japanese(before_text):
-                    create_japanese_run_with_font_size(paragraph, before_text, 11)
-                else:
-                    paragraph.add_run(before_text)
-        
-        # Thêm ruby element với format từ run đầu tiên
-        ruby_element = create_ruby_element(kanji, hiragana, first_run)
-        paragraph._element.append(ruby_element)
-        
-        last_pos = end
-    
-    # Thêm text còn lại với font size 11pt nếu có tiếng Nhật
-    if last_pos < len(full_text):
-        remaining_text = full_text[last_pos:]
-        if remaining_text:
-            if has_japanese(remaining_text):
-                create_japanese_run_with_font_size(paragraph, remaining_text, 11)
-            else:
-                paragraph.add_run(remaining_text)
-    
+
+    for run in old_runs:
+        text = run.text
+        def copy_run_rpr(src_run, dst_run):
+            # Xóa rPr cũ nếu có
+            if dst_run._element.rPr is not None:
+                dst_run._element.remove(dst_run._element.rPr)
+            # Tạo rPr mới
+            rPr = OxmlElement('w:rPr')
+            if src_run._element.rPr is not None:
+                for child in src_run._element.rPr:
+                    rPr.append(child.__copy__())
+            dst_run._element.insert(0, rPr)
+
+        if not has_japanese(text):
+            # Không có tiếng Nhật, add lại nguyên run (giữ định dạng)
+            new_run = paragraph.add_run(text)
+            copy_run_rpr(run, new_run)
+            continue
+
+        # Nếu có tiếng Nhật, tìm các match kanji trong run
+        matches = find_kanji_matches_optimized(text, dictionary)
+        if not matches:
+            # Không có kanji match, add lại nguyên run
+            new_run = paragraph.add_run(text)
+            copy_run_rpr(run, new_run)
+            continue
+
+        last_pos = 0
+        for start, end, kanji, hiragana in matches:
+            # Thêm text trước kanji (nếu có)
+            if start > last_pos:
+                before_text = text[last_pos:start]
+                if before_text:
+                    new_run = paragraph.add_run(before_text)
+                    copy_run_rpr(run, new_run)
+            # Thêm ruby element
+            ruby_element = create_ruby_element(kanji, hiragana, run)
+            paragraph._element.append(ruby_element)
+            last_pos = end
+        # Thêm text còn lại sau cùng
+        if last_pos < len(text):
+            after_text = text[last_pos:]
+            if after_text:
+                new_run = paragraph.add_run(after_text)
+                copy_run_rpr(run, new_run)
     return True
 
 def save_missing_kanji_report(missing_kanji, output_path):
@@ -371,7 +365,7 @@ def process_word_document(input_path, output_path, dictionary_path):
                 japanese_paragraphs += 1
                 
                 # SỬA: Xử lý tất cả paragraph, không bỏ qua paragraph dài
-                if add_ruby_to_paragraph_compact(paragraph, dictionary):
+                if add_ruby_to_paragraph_preserve_runs(paragraph, dictionary):
                     processed_count += 1
                 
                 # Hiển thị tiến trình mỗi 50 paragraph
@@ -384,7 +378,7 @@ def process_word_document(input_path, output_path, dictionary_path):
                         gc.collect()
             else:
                 # Xử lý section break cho paragraph không có tiếng Nhật
-                add_ruby_to_paragraph_compact(paragraph, dictionary)
+                add_ruby_to_paragraph_preserve_runs(paragraph, dictionary)
         
         # Thêm 2 dòng trống sau các paragraph có section break
         for i in reversed(paragraphs_to_add_spacing):
@@ -405,7 +399,7 @@ def process_word_document(input_path, output_path, dictionary_path):
                         total_paragraphs += 1
                         if paragraph.text.strip() and has_japanese(paragraph.text):
                             japanese_paragraphs += 1
-                            if add_ruby_to_paragraph_compact(paragraph, dictionary):
+                            if add_ruby_to_paragraph_preserve_runs(paragraph, dictionary):
                                 processed_count += 1
             
             # Hiển thị tiến trình tables
