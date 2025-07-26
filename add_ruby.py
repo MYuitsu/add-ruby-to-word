@@ -64,7 +64,14 @@ def clean_kanji_word(word):
     # Chỉ giữ lại ký tự Kanji, Hiragana, Katakana
     # Giữ lại số thường (0-9) và số fullwidth (０-９)
     # Giữ lại Kanji, Hiragana, Katakana, số, và Kanji thành phần (radical)
-    cleaned = re.sub(r'[^\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff\u2f00-\u2fdf0-9０-９]', '', word)
+
+    # Bản đồ chuyển các Kanji radical về Kanji chuẩn
+    radical_to_kanji = {
+        "⼀": "一", "⼁": "｜", "⼂": "丶", "⼃": "丿", "⼄": "乙", "⼅": "亅", "⼆": "二", "⼇": "亠", "⼈": "人", "⼉": "儿", "⼊": "入", "⼋": "八", "⼌": "冂", "⼍": "冖", "⼎": "冫", "⼏": "几", "⼐": "凵", "⼑": "刀", "⼒": "力", "⼓": "勹", "⼔": "匕", "⼕": "匚", "⼖": "匸", "⼗": "十", "⼘": "卜", "⼙": "卩", "⼚": "厂", "⼛": "厶", "⼜": "又", "⼝": "口", "⼞": "囗", "⼟": "土", "⼠": "士", "⼡": "夂", "⼢": "夊", "⼣": "夕", "⼤": "大", "⼥": "女", "⼦": "子", "⼧": "宀", "⼨": "寸", "⼩": "小", "⼪": "尢", "⼫": "尸", "⼬": "屮", "⼭": "山", "⼮": "巛", "⼯": "工", "⼰": "己", "⼱": "巾", "⼲": "干", "⼳": "幺", "⼴": "广", "⼵": "廴", "⼶": "廾", "⼷": "弋", "⼸": "弓", "⼹": "彐", "⼺": "彡", "⼻": "彳", "⼼": "心", "⼽": "戈", "⼾": "戸", "⼿": "手", "⽀": "支", "⽁": "攴", "⽂": "文", "⽃": "斗", "⽄": "斤", "⽅": "方", "⽆": "无", "⽇": "日", "⽈": "曰", "⽉": "月", "⽊": "木", "⽋": "欠", "⽌": "止", "⽍": "歹", "⽎": "殳", "⽏": "毋", "⽐": "比", "⽑": "毛", "⽒": "氏", "⽓": "气", "⽔": "水", "⽕": "火", "⽖": "爪", "⽗": "父", "⽘": "爻", "⽙": "爿", "⽚": "片", "⽛": "牙", "⽜": "牛", "⽝": "犬", "⽞": "玄", "⽟": "玉", "⽠": "瓜", "⽡": "瓦", "⽢": "甘", "⽣": "生", "⽤": "用", "⽥": "田", "⽦": "疋", "⽧": "疒", "⽨": "癶", "⽩": "白", "⽪": "皮", "⽫": "皿", "⽬": "目", "⽭": "矛", "⽮": "矢", "⽯": "石", "⽰": "示", "⽱": "禸", "⽲": "禾", "⽳": "穴", "⽴": "立", "⽵": "竹", "⽶": "米", "⽷": "糸", "⽸": "缶", "⽹": "网", "⽺": "羊", "⽻": "羽", "⽼": "老", "⽽": "而", "⽾": "耒", "⽿": "耳", "⾀": "聿", "⾁": "肉", "⾂": "臣", "⾃": "自", "⾄": "至", "⾅": "臼", "⾆": "舌", "⾇": "舛", "⾈": "舟", "⾉": "艮", "⾊": "色", "⾋": "艸", "⾌": "虍", "⾍": "虫", "⾎": "血", "⾏": "行", "⾐": "衣", "⾑": "襾", "⾒": "見", "⾓": "角", "⾔": "言", "⾕": "谷", "⾖": "豆", "⾗": "豕", "⾘": "豸", "⾙": "貝", "⾚": "赤", "⾛": "走", "⾜": "足", "⾝": "身", "⾞": "車", "⾟": "辛", "⾠": "辰", "⾡": "辵", "⾢": "邑", "⾣": "酉", "⾤": "釆", "⾥": "里", "⾦": "金", "⾧": "長", "⾨": "門", "⾩": "阜", "⾪": "隶", "⾫": "隹", "⾬": "雨", "⾭": "青", "⾮": "非", "⾯": "面", "⾰": "革", "⾱": "韋", "⾲": "韭", "⾳": "音", "⾴": "頁", "⾵": "風", "⾶": "飛", "⾷": "食", "⾸": "首", "⾹": "香", "⾺": "馬", "⾻": "骨", "⾼": "高", "⾽": "髟", "⾾": "鬥", "⾿": "鬯", "⿀": "鬲", "⿁": "鬼", "⿂": "魚", "⿃": "鳥", "⿄": "鹵", "⿅": "鹿", "⿆": "麦", "⿇": "麻", "⿈": "黄", "⿉": "黍", "⿊": "黒", "⿋": "黹", "⿌": "黽", "⿍": "鼎", "⿎": "鼓", "⿏": "鼠", "⿐": "鼻", "⿑": "齊", "⿒": "歯", "⿓": "竜", "⿔": "亀", "⿕": "龠"
+    }
+    # Thay thế các radical bằng Kanji chuẩn
+    word = ''.join([radical_to_kanji.get(ch, ch) for ch in word])
+    cleaned = re.sub(r'[^\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff0-9０-９]', '', word)
     return cleaned
 
 def extract_kanji_words(text):
@@ -290,10 +297,30 @@ def add_ruby_to_paragraph_preserve_runs(paragraph, dictionary):
                 if before_text:
                     new_run = paragraph.add_run(before_text)
                     copy_run_rpr(run, new_run)
-            # Thêm ruby element
-            ruby_element = create_ruby_element(kanji, hiragana, run)
-            paragraph._element.append(ruby_element)
-            last_pos = end
+
+            # Nếu là cụm từ có nhiều ký tự kanji, và furigana chỉ là 1 âm tiết, chỉ thêm ruby cho ký tự kanji đầu tiên
+            if len(kanji) > 1 and len(hiragana) == 1:
+                # Tìm vị trí ký tự kanji đầu tiên trong chuỗi kanji
+                for idx, ch in enumerate(kanji):
+                    if has_kanji(ch):
+                        # Thêm phần trước ký tự kanji đầu tiên
+                        if idx > 0:
+                            new_run = paragraph.add_run(kanji[:idx])
+                            copy_run_rpr(run, new_run)
+                        # Thêm ruby cho ký tự kanji đầu tiên
+                        ruby_element = create_ruby_element(ch, hiragana, run)
+                        paragraph._element.append(ruby_element)
+                        # Thêm phần còn lại sau ký tự kanji đầu tiên
+                        if idx + 1 < len(kanji):
+                            new_run = paragraph.add_run(kanji[idx+1:])
+                            copy_run_rpr(run, new_run)
+                        break
+                last_pos = end
+            else:
+                # Thêm ruby như cũ cho toàn bộ cụm
+                ruby_element = create_ruby_element(kanji, hiragana, run)
+                paragraph._element.append(ruby_element)
+                last_pos = end
         # Thêm text còn lại sau cùng
         if last_pos < len(text):
             after_text = text[last_pos:]
