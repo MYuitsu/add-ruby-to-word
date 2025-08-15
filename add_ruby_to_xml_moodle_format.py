@@ -283,8 +283,8 @@ def save_missing_kanji_report(missing_kanji, report_file):
 
 def main():
     """Main function"""
-    dictionary_file = "dictionary_full_jmdict.json"
-    input_folder = "2025.7.14"
+    dictionary_file = "dictionary_hiragana 12-08 14h55.json"
+    input_folder = "test"
     if not os.path.exists(dictionary_file):
         print(f"Không tìm thấy dictionary: {dictionary_file}")
         return

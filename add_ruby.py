@@ -541,9 +541,9 @@ def create_japanese_run_with_font_size(paragraph, text, font_size_pt=11):
     return run
 
 def main():
-    input_file = "KHÔNG FURIGANA - KIẾN THỨC CHUNG 29-07 19h23.docx"
-    output_file = "KHÔNG FURIGANA - KIẾN THỨC CHUNG 29-07 19h23 ruby.docx"  # Giảm spacing giữa các dòng
-    dictionary_file = "dictionary_hiragana 29-07 19h23.json"
+    input_file = "Tóm tắt kiến thức chung.docx"
+    output_file = "Tóm tắt kiến thức chung ruby.docx"  # Giảm spacing giữa các dòng
+    dictionary_file = "dictionary_hiragana 12-08 14h55.json"
     
     print("=== Chương trình thêm Ruby (không highlight) cho file Word ===")
     print(f"Input file: {input_file}")
