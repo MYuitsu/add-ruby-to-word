@@ -131,6 +131,9 @@ def create_ruby_element(kanji, hiragana, source_run=None):
     
     rt_r.append(rt_rpr)
     rt_t = OxmlElement('w:t')
+    # Thêm thuộc tính để preserve khoảng trống
+    if ' ' in hiragana:
+        rt_t.set('{http://www.w3.org/XML/1998/namespace}space', 'preserve')
     rt_t.text = hiragana
     rt_r.append(rt_t)
     rt.append(rt_r)
@@ -298,18 +301,21 @@ def add_ruby_to_paragraph_preserve_runs(paragraph, dictionary):
                     new_run = paragraph.add_run(before_text)
                     copy_run_rpr(run, new_run)
 
+            # Đếm ký tự hiragana thực tế (không tính khoảng trống)
+            hiragana_actual_len = len(hiragana.strip())
+            
             # Nếu số ký tự value (hiragana) nhỏ hơn số ký tự key (kanji), chỉ gán ruby cho cụm kanji bằng số ký tự hiragana
-            if len(hiragana) < len(kanji) and len(hiragana) > 0:
-                kanji_ruby = kanji[:len(hiragana)]
+            if hiragana_actual_len < len(kanji) and hiragana_actual_len > 0:
+                kanji_ruby = kanji[:hiragana_actual_len]
                 ruby_element = create_ruby_element(kanji_ruby, hiragana, run)
                 paragraph._element.append(ruby_element)
                 # Nếu còn ký tự kanji dư, thêm vào không ruby
-                if len(kanji) > len(hiragana):
-                    new_run = paragraph.add_run(kanji[len(hiragana):])
+                if len(kanji) > hiragana_actual_len:
+                    new_run = paragraph.add_run(kanji[hiragana_actual_len:])
                     copy_run_rpr(run, new_run)
                 last_pos = end
             # Nếu là cụm từ có nhiều ký tự kanji, và furigana chỉ là 1 âm tiết, chỉ thêm ruby cho ký tự kanji đầu tiên
-            elif len(kanji) > 1 and len(hiragana) == 1:
+            elif len(kanji) > 1 and hiragana_actual_len == 1:
                 for idx, ch in enumerate(kanji):
                     if has_kanji(ch):
                         if idx > 0:
@@ -541,9 +547,9 @@ def create_japanese_run_with_font_size(paragraph, text, font_size_pt=11):
     return run
 
 def main():
-    input_file = "Tóm tắt kiến thức chung.docx"
-    output_file = "Tóm tắt kiến thức chung ruby.docx"  # Giảm spacing giữa các dòng
-    dictionary_file = "dictionary_hiragana 12-08 14h55.json"
+    input_file = "asdasdasd.docx"
+    output_file = "asdasdasd_ruby_test.docx"  # Đổi tên để tránh permission error
+    dictionary_file = "dictionary 20250816 14h09.json"
     
     print("=== Chương trình thêm Ruby (không highlight) cho file Word ===")
     print(f"Input file: {input_file}")
