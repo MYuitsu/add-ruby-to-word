@@ -2,22 +2,28 @@ import json
 import re
 from pathlib import Path
 
+# =========================
+# Regex
+# =========================
 KANJI_RE = re.compile(r'[\u4e00-\u9fff々]')
 KANA_RE  = re.compile(r'[\u3040-\u309f\u30a0-\u30ffー]')
 
 SMALL_KANA = set("ゃゅょぁぃぅぇぉゎャュョァィゥェォヮ")
 PROLONG = "ー"
 
+
 def is_kanji(ch: str) -> bool:
-    return bool(KANJI_RE.fullmatch(ch))
+    return bool(KANJI_RE.fullmatch(ch or ""))
+
 
 def is_kana(ch: str) -> bool:
-    return bool(KANA_RE.fullmatch(ch))
+    return bool(KANA_RE.fullmatch(ch or ""))
+
 
 def split_to_moras(s: str):
     """Tách kana thành mora (đủ tốt để chia đều)."""
     moras = []
-    for ch in s:
+    for ch in (s or ""):
         if not moras:
             moras.append(ch)
             continue
@@ -27,13 +33,15 @@ def split_to_moras(s: str):
             moras.append(ch)
     return moras
 
+
 def extract_kana_runs(surface: str):
     """Lấy các đoạn kana liên tiếp trong surface: [(start_idx, kana_str), ...]"""
     runs = []
     i = 0
     n = len(surface)
     while i < n:
-        if is_kana(surface[i]) and not is_kanji(surface[i]):
+        ch = surface[i]
+        if is_kana(ch) and not is_kanji(ch):
             j = i + 1
             while j < n and is_kana(surface[j]) and not is_kanji(surface[j]):
                 j += 1
@@ -43,87 +51,101 @@ def extract_kana_runs(surface: str):
             i += 1
     return runs
 
+
+def find_best_anchor(kana_run: str, reading: str, rp: int):
+    """
+    Tìm anchor của kana-run trong reading theo thứ tự.
+    - Ưu tiên match đầy đủ.
+    - Nếu không có: thử suffix/prefix từ dài -> ngắn.
+    Return: (surface_offset_in_run, matched_str, r_from, r_to) hoặc None
+    """
+    pos = reading.find(kana_run, rp)
+    if pos != -1:
+        return (0, kana_run, pos, pos + len(kana_run))
+
+    for L in range(len(kana_run) - 1, 0, -1):
+        suf = kana_run[-L:]
+        pos = reading.find(suf, rp)
+        if pos != -1:
+            off = len(kana_run) - L
+            return (off, suf, pos, pos + L)
+
+        pre = kana_run[:L]
+        pos = reading.find(pre, rp)
+        if pos != -1:
+            return (0, pre, pos, pos + L)
+
+    return None
+
+
 def infer_segments(surface: str, reading: str):
     """
-    Suy luận segments cho các cụm kanji dựa trên kana anchor trong surface.
-    Return: list of (start_idx, end_idx_excl, rt_slice)
+    Suy luận segments dựa trên kana anchor trong surface.
+    - Không fallback ngay khi 1 kana-run không match -> skip kana-run đó.
+    - segments tạo theo "vùng" để tránh duplicate rt cho nhiều kanji-run.
+    Return:
+      segments: list of (s0, s1, rt_slice)
+      skipped_any: bool
     """
     kana_runs = extract_kana_runs(surface)
-
-    # Tìm các anchor kana trong reading theo thứ tự
     anchors = []
     rp = 0
+    skipped_any = False
+
     for si, kana in kana_runs:
-        pos = reading.find(kana, rp)
-        if pos == -1:
-            # Không tìm thấy anchor -> bỏ cơ chế anchor (fallback)
-            return fallback_segment(surface, reading)
-        anchors.append((si, kana, pos, pos + len(kana)))
-        rp = pos + len(kana)
+        a = find_best_anchor(kana, reading, rp)
+        if a is None:
+            skipped_any = True
+            continue
+        off, sub, r0, r1 = a
+        anchors.append((si + off, sub, r0, r1))
+        rp = r1
 
     segments = []
     prev_s = 0
     prev_r = 0
 
-    # helper: add segment cho region [s_from, s_to) và reading [r_from, r_to)
     def add_region(s_from, s_to, r_from, r_to):
-        if s_from >= s_to:
+        """Add 1 segment cho vùng [s_from, s_to) nếu vùng đó có kanji."""
+        if s_from >= s_to or r_from > r_to:
             return
         region = surface[s_from:s_to]
-        rt = reading[r_from:r_to]
-        # tìm các run kanji liên tiếp trong region
-        idx = 0
-        while idx < len(region):
-            if is_kanji(region[idx]):
-                j = idx + 1
-                while j < len(region) and is_kanji(region[j]):
-                    j += 1
-                # run kanji: region[idx:j]
-                segments.append((s_from + idx, s_from + j, rt))
-                idx = j
-            else:
-                idx += 1
+        if any(is_kanji(ch) for ch in region):
+            segments.append((s_from, s_to, reading[r_from:r_to]))
 
-    for (si, kana, r_from, r_to) in anchors:
-        # region trước kana anchor
-        add_region(prev_s, si, prev_r, r_from)
+    for (si, sub, r0, r1) in anchors:
+        add_region(prev_s, si, prev_r, r0)
+        prev_s = si + len(sub)
+        prev_r = r1
 
-        # vùng kana itself: bỏ qua (không ruby)
-        prev_s = si + len(kana)
-        prev_r = r_to
-
-    # tail
     add_region(prev_s, len(surface), prev_r, len(reading))
-    return segments
 
-def fallback_segment(surface: str, reading: str):
-    """Fallback: gom tất cả kanji trong surface thành 1 segment đọc toàn bộ."""
-    # lấy run kanji đầu tiên đến cuối (thực tế: gom các run kanji liên tiếp)
-    segments = []
-    i = 0
-    n = len(surface)
-    while i < n:
-        if is_kanji(surface[i]):
-            j = i + 1
-            while j < n and is_kanji(surface[j]):
-                j += 1
-            segments.append((i, j, reading))
-            i = j
-        else:
-            i += 1
-    return segments
+    # Nếu không tạo được segment nào nhưng surface có kanji -> fallback 1 segment
+    if not segments and any(is_kanji(ch) for ch in surface):
+        segments = [(0, len(surface), reading)]
+        skipped_any = True
 
-def segments_to_map(surface: str, segments):
+    return segments, skipped_any
+
+
+def segments_to_map(surface: str, segments, full_reading: str):
     """
     Chuyển segments -> map per-kanji.
-    Nếu 1 segment có nhiều kanji:
-      - chia reading theo mora đều cho số kanji (uncertain=True)
+    - Nếu 1 segment có nhiều kanji: chia reading theo mora đều (uncertain=True)
+    - Nếu thiếu mora: gán cả rt cho kanji đầu (uncertain=True)
+    - Dedup theo index i (giữ object, không xoá object rt:"")
+    - Nếu uncertain và rt TRÙNG NHAU -> chữ sau rt:""
+      ✅ Nhưng nếu đã có chữ sau rt:"" (tức là "không biết") -> chữ đầu giữ FULL reading
     """
     mapping = []
     uncertain = False
 
     for s0, s1, rt in segments:
-        kanjis = [ (i, surface[i]) for i in range(s0, s1) if is_kanji(surface[i]) ]
+        if rt is None:
+            continue
+        rt = str(rt)
+
+        kanjis = [(i, surface[i]) for i in range(s0, s1) if is_kanji(surface[i])]
         if not kanjis:
             continue
 
@@ -132,19 +154,19 @@ def segments_to_map(surface: str, segments):
             mapping.append({"i": i, "ch": ch, "rt": rt})
             continue
 
-        # nhiều kanji trong 1 segment -> chia đều mora
         moras = split_to_moras(rt)
-        if len(moras) < len(kanjis):
-            # không đủ để chia -> gán cả rt cho run đầu (vẫn uncertain)
+        k = len(kanjis)
+
+        if len(moras) < k:
             uncertain = True
             i, ch = kanjis[0]
             mapping.append({"i": i, "ch": ch, "rt": rt})
+            # không auto-add các chữ sau (vì không biết chia)
             continue
 
         uncertain = True
-        k = len(kanjis)
         base = len(moras) // k
-        rem  = len(moras) % k
+        rem = len(moras) % k
 
         idx = 0
         for t in range(k):
@@ -154,30 +176,72 @@ def segments_to_map(surface: str, segments):
             i, ch = kanjis[t]
             mapping.append({"i": i, "ch": ch, "rt": part})
 
-    return mapping, uncertain
+    # dedup by i (giữ phần tử đầu tiên theo index)
+    seen_i = set()
+    dedup = []
+    for m in mapping:
+        if m["i"] in seen_i:
+            continue
+        seen_i.add(m["i"])
+        dedup.append(m)
+
+    dedup.sort(key=lambda x: x["i"])
+
+    # ✅ Rule: rt trùng -> chữ sau để trống, nhưng nếu đã trống thì chữ đầu giữ FULL reading
+    blanked_any = False
+    if uncertain:
+        prev_rt = None
+        for m in dedup:
+            cur = (m.get("rt") or "")
+            if cur == "":
+                continue
+            if prev_rt is not None and cur == prev_rt:
+                m["rt"] = ""          # giữ object, chỉ blank rt
+                blanked_any = True
+            else:
+                prev_rt = cur
+
+        # Nếu có blank => coi như "các chữ sau không biết" => chữ đầu giữ full reading
+        if blanked_any:
+            for m in dedup:
+                if (m.get("rt") or "").strip():
+                    m["rt"] = full_reading
+                    break
+
+    return dedup, uncertain
+
 
 def convert(in_path: str, out_path: str):
     src = json.loads(Path(in_path).read_text(encoding="utf-8"))
     dst = {}
 
+    total = 0
+    kept = 0
+
     for surface, reading in src.items():
-        if not isinstance(reading, str):
+        total += 1
+        if not isinstance(surface, str) or not isinstance(reading, str) or not reading:
+            continue
+        if not any(is_kanji(ch) for ch in surface):
             continue
 
-        segments = infer_segments(surface, reading)
-        mapping, uncertain = segments_to_map(surface, segments)
+        segments, skipped_any = infer_segments(surface, reading)
+        mapping, uncertain_map = segments_to_map(surface, segments, reading)
 
-        # map dùng index theo surface gốc -> đổi về index tương đối 0..len-1 nếu bạn muốn:
-        # (hiện tại để i theo surface gốc, dễ apply)
         dst[surface] = {
             "rt": reading,
             "map": mapping,
             "segments": [{"s": [s0, s1], "rt": rt} for (s0, s1, rt) in segments],
-            "uncertain": uncertain
+            "uncertain": bool(skipped_any or uncertain_map),
         }
+        kept += 1
 
-    Path(out_path).write_text(json.dumps(dst, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("Converted:", len(dst), "entries ->", out_path)
+    Path(out_path).write_text(
+        json.dumps(dst, ensure_ascii=False, indent=2),
+        encoding="utf-8"
+    )
+    print(f"Converted: {kept}/{total} entries -> {out_path}")
+
 
 if __name__ == "__main__":
     convert("dictionary 20250816 2301.json", "dict_struct.json")
